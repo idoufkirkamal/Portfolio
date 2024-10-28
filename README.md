@@ -5,7 +5,10 @@ Welcome to my portfolio! This project showcases my skills, projects, and experie
 
 ### Images of The Portfolio Website:
 
-![Nextjs Portfolio Website](https://github.com/idoufkirkamal/portfolio/public/website_images/test.png)
+![Nextjs Portfolio Website](https://github.com/idoufkirkamal/portfolio/blob/main/public/website_images/test.png)
+![Nextjs Portfolio Website](https://github.com/idoufkirkamal/portfolio/blob/main/public/website_images/test.png)
+![Nextjs Portfolio Website](https://github.com/idoufkirkamal/portfolio/blob/main/public/website_images/test.png)
+![Nextjs Portfolio Website](https://github.com/idoufkirkamal/portfolio/blob/main/public/website_images/test.png)
 
 
 ### External Libraries used in this project:
