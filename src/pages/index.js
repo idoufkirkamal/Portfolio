@@ -8,6 +8,7 @@ import dynamic from 'next/dynamic';
 const AnimatedText = dynamic(() => import('@/components/AnimatedText'), { ssr: false });
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
+import HireMe from '@/components/HireMe'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='flex items-center text-gray-900 w-full min-h-screen'>
+      <main className='flex bg-light items-center text-dark w-full min-h-screen'>
         <Layout className='py-0'>
           <div className='flex items-center justify-between w-full'>
               <div className='w-1/2'>
@@ -32,14 +33,14 @@ export default function Home() {
                   As a skilled software engineer who enjoys creating helpful, user-friendly clean and easy-to-use software, I love turning ideas into working applications that solve real problems. Explore my work to see how I can help bring your ideas to life.
                   </p>
                   <div className='flex items-center self-start mt-2'>
-                    <Link className='flex items-center bg-gray-900 text-white p-2.5 pl-6 pr-5 rounded-lg text-lg font-semibold hover:bg-white hover:text-gray-900 border-2 border-solid border-transparent hover:border-gray-900' href="/IDOUFKIR_Kamal_CV.pdf" download={true}>
+                    <Link className='flex items-center bg-dark text-light p-2.5 pl-6 pr-5 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark' href="/IDOUFKIR_Kamal_CV.pdf" download={true}>
                       Download my Resume <LinkArrow className={"!w-6 ml-2"}/>
                     </Link>
                   </div>
               </div>
           </div>
-
         </Layout>
+        <HireMe/>
       </main>
     </>
   )
