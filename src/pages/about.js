@@ -4,6 +4,7 @@ import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
 import Image from 'next/image'
 import profilePic from '../../public/images/profile/profile2.jpg'
+import Skills from '@/components/Skills'
 
 const about = () => {
   return (
@@ -36,6 +37,7 @@ const about = () => {
               <Image src={profilePic} alt="Kamal IDOUFKIR" className='w-full h-auto rounded-2xl'/>
             </div>
           </div>
+          <Skills />
           </Layout>
         </main>
     </div>
