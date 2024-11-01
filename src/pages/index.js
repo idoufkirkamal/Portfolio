@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Layout from '@/components/Layout'
-import ProfilePic from "../../public/images/profile/developer-pic-1.png"
+import ProfilePic from "../../public/images/profile/profile1.png"
 import dynamic from 'next/dynamic';
 const AnimatedText = dynamic(() => import('@/components/AnimatedText'), { ssr: false });
 import Link from 'next/link'
@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>IDOUFKIR Kamal</title>
-        <meta name="description" content="IDOUFKIR Kamal" />
+        <title>Kamal IDOUFKIR</title>
+        <meta name="description" content="Kamal IDOUFKIR" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -25,7 +25,7 @@ export default function Home() {
         <Layout className='py-0'>
           <div className='flex items-center justify-between w-full'>
               <div className='w-1/2'>
-                <Image src={ProfilePic} alt='IDOUFKIR Kamal' className='w-full h-full'/>
+                <Image src={ProfilePic} alt='Kamal IDOUFKIR' className='w-full h-full'/>
               </div>
               <div className='w-1/2 flex flex-col items-center self-center'>
                   <AnimatedText text="Turning Ideas into Powerful, Clean, User-Friendly Software!" className='!text-5xl text-left'/>
