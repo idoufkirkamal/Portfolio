@@ -7,7 +7,7 @@ import ProfilePic from "../../public/images/profile/developer-pic-1.png"
 import dynamic from 'next/dynamic';
 const AnimatedText = dynamic(() => import('@/components/AnimatedText'), { ssr: false });
 import Link from 'next/link'
-import { LinkArrow } from '@/components/Icons'
+import { DownloadIcon } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -34,7 +34,7 @@ export default function Home() {
                   </p>
                   <div className='flex items-center self-start mt-2'>
                     <Link className='flex items-center bg-dark text-light p-2.5 pl-6 pr-5 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark' href="/IDOUFKIR_Kamal_CV.pdf" download={true}>
-                      Download my Resume <LinkArrow className={"!w-6 ml-2"}/>
+                      Download CV <DownloadIcon className={"!w-5 ml-2"}/>
                     </Link>
                   </div>
               </div>
