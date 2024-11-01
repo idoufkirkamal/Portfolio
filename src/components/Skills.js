@@ -27,9 +27,9 @@ const skillsIcons = [
 
 const Skills = () => {
   return (
-    <>
-      <h1 className='font-bold text-8xl mt-40 w-full text-center'>Skills</h1>
-      <div className='flex items-start justify-start gap-6 flex-wrap pt-20'>
+    <div className='mt-32'>
+      <h1 className='font-bold text-8xl mb-28 w-full text-center text-dark'>Skills</h1>
+      <div className='flex items-start justify-start gap-6 flex-wrap'>
         {skillsIcons.map((icon, index) => (
           <div 
             key={index} 
@@ -43,7 +43,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

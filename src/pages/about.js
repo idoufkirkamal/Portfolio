@@ -5,6 +5,9 @@ import AnimatedText from '@/components/AnimatedText'
 import Image from 'next/image'
 import profilePic from '../../public/images/profile/profile2.jpg'
 import Skills from '@/components/Skills'
+import Experience from '@/components/Experience'
+import Education from '@/components/Education' 
+import Certificates from '@/components/Certificates' 
 
 const about = () => {
   return (
@@ -38,6 +41,9 @@ const about = () => {
             </div>
           </div>
           <Skills />
+          <Experience/>
+          <Education/>
+          <Certificates/>
           </Layout>
         </main>
     </div>
