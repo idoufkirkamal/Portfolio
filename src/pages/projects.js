@@ -7,6 +7,9 @@ import Link from 'next/link'
 import { GithubIcon }  from '@/components/Icons/'
 import Project1 from '../../public/images/projects/1.jpg'
 import Project2 from '../../public/images/projects/2.jpg'
+import Project3 from '../../public/images/projects/3.jpg'
+import Project4 from '../../public/images/projects/4.jpg'
+import Project5 from '../../public/images/projects/5.jpg'
 
 const Featuredproject = ({type, title, summary, img, link, githubLink}) => {
     return(
@@ -93,7 +96,7 @@ const projects = () => {
                         title="Agency Website Template"
                         summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                         It shows detail regarding almost all the cryptocurrency."
-                        img={Project2}
+                        img={Project3}
                         link="/"
                         githubLink="/"
                       /> 
@@ -104,7 +107,7 @@ const projects = () => {
                           title="Agency Website Template"
                           summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                           It shows detail regarding almost all the cryptocurrency."
-                          img={Project2}
+                          img={Project4}
                           link="/"
                           githubLink="/"
                         /> 
@@ -115,7 +118,7 @@ const projects = () => {
                           title="Agency Website Template"
                           summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                           It shows detail regarding almost all the cryptocurrency."
-                          img={Project2}
+                          img={Project5}
                           link="/"
                           githubLink="/"
                         /> 
