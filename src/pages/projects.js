@@ -12,9 +12,9 @@ const Featuredproject = ({type, title, summary, img, link, githubLink}) => {
     return(
         <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative'>
           <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-[1.88rem]'/>
-            <Link href={link} target="_blank" className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} className="w-full h-auto"/>
-            </Link>
+          <Link href={link} target="_blank" className="w-1/2 cursor-pointer overflow-hidden rounded-lg group">
+            <Image src={img} alt={title} className="w-full h-auto transform transition-transform duration-500 ease-in-out group-hover:scale-105"/>
+        </Link>
             <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
                 <span className='text-primary font-medium text-xl'>{type}</span>
                 <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
@@ -34,9 +34,9 @@ const Project = ({type, title, summary, img, link, githubLink}) => {
   return(
       <article className='w-full flex flex-col items-center justify-center rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6 relative'>
           <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[102.5%] rounded-[2rem] bg-dark rounded-br-[2.1rem]'/>
-          <Link href={link} target="_blank" className='w-full cursor-pointer overflow-hidden rounded-lg'>
-              <Image src={img} alt={title} className="w-full h-auto"/>
-          </Link>
+          <Link href={link} target="_blank" className="w-full cursor-pointer overflow-hidden rounded-lg group">
+            <Image src={img} alt={title} className="w-full h-auto transform transition-transform duration-500 ease-in-out group-hover:scale-105"/>
+        </Link>
           <div className='w-full flex flex-col items-start justify-between mt-4'>
               <span className='text-primary font-medium text-xl'>{type}</span>
                 <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
