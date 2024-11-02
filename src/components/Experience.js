@@ -31,7 +31,7 @@ const Experience = () => {
     const { scrollYProgress } = useScroll(
         {
             target: ref,
-            offset: ["start end", "center start"]
+            offset: ["start end", "center start"],
         }
 
     )
@@ -44,16 +44,6 @@ const Experience = () => {
                 style={{scaleY: scrollYProgress}}
                 className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'/>
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
-                    <Details
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="https://www.google.com"
-                        time="2022-Present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-                        search engine, including improving the accuracy and relevance of search results and 
-                        developing new tools for data analysis and visualization."
-                    />
                     <Details
                         position="Software Engineer"
                         company="Google"
