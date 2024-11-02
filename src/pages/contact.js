@@ -13,7 +13,7 @@ const contact = () => {
     </Head>
     <main className='flex w-full flex-col items-center justify-center'>
         <Layout className='pt-16'>    
-        <AnimatedText className='mb-16' text="My Services"/>         
+        <AnimatedText className='mb-16' text="Contact"/>         
         
 
         </Layout>
