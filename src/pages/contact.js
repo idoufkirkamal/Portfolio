@@ -15,15 +15,32 @@ const contact = () => {
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText className="mb-16" text="Contact" />
-          
           <div className="grid grid-cols-12 gap-8 w-full max-w-5xl">
             {/* Contact Form */}
+            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="col-span-12 md:col-span-7 bg-gray-100 p-8 rounded-lg shadow-lg"
             >
+              <motion.h2 
+                initial={{ opacity: 0, y: 20 }} 
+                animate={{ opacity: 1, y: 0 }} 
+                transition={{ duration: 0.5 }} 
+                className="text-2xl font-bold text-left mb-4"
+              >
+                Let's Bring Your Ideas to Life!
+              </motion.h2>
+              <motion.h2 
+                initial={{ opacity: 0, y: 20 }} 
+                animate={{ opacity: 1, y: 0 }} 
+                transition={{ duration: 0.5 }} 
+                className="text-lg text-left mb-8"
+              >
+                If you have any suggestions or a project in mind, please fill out the form below, and I will get back to you soon!
+              </motion.h2>
+
               <form className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700">Name</label>

@@ -2,8 +2,10 @@ import Link from 'next/link'
 import React from 'react'
 import Logo from './Logo'
 import {useRouter} from 'next/router'
-import { GithubIcon, LinkedInIcon } from './Icons'
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons'
 import { motion } from 'framer-motion'
+import { LanguageIcon } from './Icons'
+import useThemSwitcher from './hooks/useThemSwitcher'
 
 const CustomLink = ({href, title, className=""}) => {
     const router = useRouter();
@@ -20,6 +22,8 @@ const CustomLink = ({href, title, className=""}) => {
 }
 
 const NavBar = () => {
+    const [mode, setMode] = useThemSwitcher();
+
   return (
     <header className='w-full px-24 py-8 font-medium flex items-center justify-between bg-light'>
         <nav>
@@ -42,7 +46,32 @@ const NavBar = () => {
             >
                 <LinkedInIcon/>
             </motion.a>
-          
+
+            <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
+                    className={`ml-3 flex items-center justify-center rounded-full p-1 w-6
+                        ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
+                    `}
+                > 
+                {
+                    mode === "light" 
+                    ? <SunIcon className={"fill-dark"}/>
+                    : <MoonIcon className={"fill-dark"}/>
+                    
+                }
+            </button>
+
+            <div className='relative ml-4'>
+                <LanguageIcon className="absolute left-2 top-1/2 transform -translate-y-1/2 text-lg !w-5" />
+                <select className="bg-light text-dark py-2 pl-7 pr-2 rounded-md text-lg font-semibold border-2 border-solid border-dark"
+                    defaultValue="language"
+                >
+                    <option value="language" disabled hidden>Language</option>
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="ar">Arabic</option>
+                </select>
+            </div>
+
         </nav>
         <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
             <Logo/>
