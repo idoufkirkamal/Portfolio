@@ -67,10 +67,15 @@ const serviceList = [
 const services = () => {
   return (
     <div>
-      <Head>
-        <title>Kamal IDOUFKIR | Services</title>
-        <meta name="description" content="Kamal IDOUFKIR" />
-      </Head>
+    <Head>
+      <title>Kamal IDOUFKIR | Services</title>
+      <meta name="description" content="Discover the professional IT services offered by Kamal IDOUFKIR, including web development, mobile app development, UI/UX design, SEO optimization, cloud solutions, and more. Each service is crafted with expertise in modern technologies like React, Tailwind CSS, and more." />
+      <meta name="keywords" content="Kamal IDOUFKIR, IT services, web development, mobile app development, UI/UX design, SEO optimization, cloud solutions, data analysis, e-commerce solutions, database management, Morocco IT professional" />
+      <meta property="og:title" content="Kamal IDOUFKIR | Professional IT Services" />
+      <meta property="og:description" content="Explore the range of IT services provided by Kamal IDOUFKIR, from web development and SEO to cloud and database solutions." />
+      <meta property="og:url" content="https://www.kamalidoufkir.me/services" />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
       <TransitionEffect/>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">

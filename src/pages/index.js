@@ -16,11 +16,16 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Kamal IDOUFKIR</title>
-        <meta name="description" content="Kamal IDOUFKIR" />
+        <title>Kamal IDOUFKIR - Software Engineer</title>
+        <meta name="description" content="Welcome to the portfolio of Kamal IDOUFKIR, a passionate Software Engineer from Morocco. Currently pursuing a Master’s degree in Software Engineering, Kamal is dedicated to creating innovative, user-friendly software solutions that make a real impact." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="Kamal IDOUFKIR, Software Engineer Morocco, software development, software engineer portfolio, innovative software solutions, user-friendly applications, software engineering master’s degree, software solutions Morocco" />
+        <meta property="og:title" content="Kamal IDOUFKIR - Software Engineer | Innovative Solutions in Software Development" />
+        <meta property="og:description" content="Discover the portfolio of Kamal IDOUFKIR, a software engineer passionate about developing user-friendly, innovative software solutions. Based in Morocco, Kamal is currently pursuing a Master’s degree in Software Engineering." />
+        <meta property="og:url" content="https://kamalidoufkir.me" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <TransitionEffect/>
       <main className='flex bg-light items-center text-dark w-full min-h-screen'>
         <Layout className='py-0'>

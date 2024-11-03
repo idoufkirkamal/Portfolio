@@ -11,8 +11,14 @@ const contact = () => {
     <div>
       <Head>
         <title>Kamal IDOUFKIR | Contact</title>
-        <meta name="description" content="Get in touch with Kamal IDOUFKIR" />
+        <meta name="description" content="Get in touch with Kamal IDOUFKIR, a skilled software engineer based in Morocco. Reach out for inquiries, collaborations, or project discussions related to web development, mobile app development, and more." />
+        <meta name="keywords" content="Kamal IDOUFKIR, contact, software engineer, web development, mobile app development, Morocco, IT professional, LinkedIn, GitHub" />
+        <meta property="og:title" content="Kamal IDOUFKIR | Contact" />
+        <meta property="og:description" content="Reach out to Kamal IDOUFKIR for software engineering services, project collaborations, and inquiries. Based in Agadir, Morocco." />
+        <meta property="og:url" content="https://www.kamalidoufkir.me/contact" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <TransitionEffect/>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">

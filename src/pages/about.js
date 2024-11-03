@@ -13,10 +13,15 @@ import TransitionEffect from '@/components/TransitionEffect'
 const about = () => {
   return (
     <div>
-        <Head>
-            <title>Kamal IDOUFKIR | About</title>
-            <meta name="description" content='Kamal IDOUFKIR' />
-        </Head>
+      <Head>
+        <title>Kamal IDOUFKIR | About</title>
+        <meta name="description" content="Learn about Kamal IDOUFKIR, a dedicated Software Engineer from Morocco with expertise in software development and a commitment to innovation, quality, and user-centered design." />
+        <meta name="keywords" content="Kamal IDOUFKIR, about Kamal IDOUFKIR, software engineer, software development, web development, mobile development, Morocco, innovative solutions" />
+        <meta property="og:title" content="Kamal IDOUFKIR | About" />
+        <meta property="og:description" content="Discover the journey, skills, and expertise of Kamal IDOUFKIR, a passionate Software Engineer from Morocco focused on impactful, user-friendly digital solutions." />
+        <meta property="og:url" content="https://www.kamalidoufkir.me/about" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
         <TransitionEffect/>
         <main className='flex w-full flex-col items-center justify-center'>
           <Layout className='pt-16'>    

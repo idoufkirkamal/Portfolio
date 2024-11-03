@@ -61,9 +61,15 @@ const projects = () => {
   return (
     <div>
     <Head>
-        <title>Kamal IDOUFKIR | Projects</title>
-        <meta name="description" content='Kamal IDOUFKIR' />
+      <title>Kamal IDOUFKIR | Projects</title>
+      <meta name="description" content="Explore the portfolio projects of Kamal IDOUFKIR, a Software Engineer from Morocco. This collection showcases innovative software engineering projects, including portfolio websites, website templates, and feature-rich applications using technologies like React, Tailwind CSS, and more." />
+      <meta name="keywords" content="Kamal IDOUFKIR, software engineering projects, portfolio website, React projects, Tailwind CSS, JavaScript projects, website templates, Morocco software engineer, innovative software solutions" />
+      <meta property="og:title" content="Kamal IDOUFKIR | Software Engineering Projects" />
+      <meta property="og:description" content="Discover the innovative software engineering projects of Kamal IDOUFKIR. This portfolio includes feature-rich applications and website templates, showcasing skills in React, Tailwind CSS, and more." />
+      <meta property="og:url" content="https://www.kamalidoufkir.me/projects" />
+      <link rel="icon" href="/favicon.ico" />
     </Head>
+
     <TransitionEffect/>
     <main className='flex w-full flex-col items-center justify-center'>
           <Layout className='pt-16'>    
