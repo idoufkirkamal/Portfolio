@@ -26,14 +26,14 @@ const NavBar = () => {
 
   return (
     <header className='w-full px-24 py-8 font-medium flex items-center justify-between bg-light'>
-        <nav>
+        <nav className='z-10'>
             <CustomLink href='/' title="Home" className='mr-4'/>
             <CustomLink href='/about' title="About" className='mx-4'/>
             <CustomLink href='/projects' title="Projects" className='mx-4'/>
             <CustomLink href='/services' title="Services" className='mx-4'/>
             <CustomLink href='/contact' title="Contact" className='ml-4'/>
         </nav>
-        <nav className='flex items-center justify-center flex-wrap'>
+        <nav className='flex items-center justify-center flex-wrap z-10'>
             <motion.a href='https://github.com/idoufkirkamal' target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
@@ -61,8 +61,8 @@ const NavBar = () => {
             </button>
 
             <div className='relative ml-4'>
-                <LanguageIcon className="absolute left-2 top-1/2 transform -translate-y-1/2 text-lg !w-5 cursor-pointer" />
-                <select className="bg-light text-dark py-2 pl-7 pr-2 rounded-md text-lg font-semibold border-2 border-solid border-dark cursor-pointer"
+                <LanguageIcon className="absolute left-2 top-1/2 transform -translate-y-1/2 text-lg !w-5 cursor-pointer ml-1" />
+                <select className="bg-light text-dark py-2 pl-8 pr-2 rounded-md text-lg font-semibold border-2 border-solid border-dark cursor-pointer"
                     defaultValue="language"
                 >
                     <option value="language" disabled hidden>Language</option>
@@ -73,7 +73,7 @@ const NavBar = () => {
             </div>
 
         </nav>
-        <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
+        <div className='absolute left-[50%] top-2 translate-x-[-50%] z-10'>
             <Logo/>
         </div>
     </header>
