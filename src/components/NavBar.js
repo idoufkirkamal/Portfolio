@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Logo from './Logo'
 import {useRouter} from 'next/router'
-import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons'
+import WhatsappIcon, { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons'
 import { motion } from 'framer-motion'
 import { LanguageIcon } from './Icons'
 import useThemSwitcher from './hooks/useThemSwitcher'
@@ -45,6 +45,13 @@ const NavBar = () => {
                 className='w-6 ml-4'
             >
                 <LinkedInIcon/>
+            </motion.a>
+            <motion.a href='https://api.whatsapp.com/send?phone=212708087165&text=Hello Kamal! Are you available to discuss a project?' target={"_blank"}
+                whileHover={{y:-2}}
+                whileTap={{scale:0.9}}
+                className='w-6 ml-4'
+            >
+                <WhatsappIcon/>
             </motion.a>
 
             <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
