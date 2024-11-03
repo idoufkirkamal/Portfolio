@@ -1,4 +1,3 @@
-// components/ParticlesContainer.js
 import React, { useCallback } from 'react';
 import Particles from "react-tsparticles";
 import { loadFull } from 'tsparticles';
@@ -57,7 +56,7 @@ const ParticlesContainer = () => {
     return (
         <Particles 
             id="tsparticles" 
-            className="w-full h-full absolute top-0 left-0 opacity-80 z-0" // Updated classes for full-screen
+            className="w-full absolute top-0 left-0 opacity-80 z-0 p-6 pb-0 h-[115%]"
             init={particlesInit} 
             loaded={particlesLoaded} 
             options={options} 
