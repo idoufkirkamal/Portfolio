@@ -4,6 +4,7 @@ import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
 import { motion } from 'framer-motion'
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const contact = () => {
   return (
@@ -12,6 +13,7 @@ const contact = () => {
         <title>Kamal IDOUFKIR | Contact</title>
         <meta name="description" content="Get in touch with Kamal IDOUFKIR" />
       </Head>
+      <TransitionEffect/>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText className="mb-16" text="Contact" />

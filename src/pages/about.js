@@ -8,6 +8,7 @@ import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education' 
 import Certificates from '@/components/Certificates' 
+import TransitionEffect from '@/components/TransitionEffect'
 
 const about = () => {
   return (
@@ -16,6 +17,7 @@ const about = () => {
             <title>Kamal IDOUFKIR | About</title>
             <meta name="description" content='Kamal IDOUFKIR' />
         </Head>
+        <TransitionEffect/>
         <main className='flex w-full flex-col items-center justify-center'>
           <Layout className='pt-16'>    
           <AnimatedText className='mb-16' text="About me"/>         

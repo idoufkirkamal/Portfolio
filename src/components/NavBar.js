@@ -61,8 +61,8 @@ const NavBar = () => {
             </button>
 
             <div className='relative ml-4'>
-                <LanguageIcon className="absolute left-2 top-1/2 transform -translate-y-1/2 text-lg !w-5" />
-                <select className="bg-light text-dark py-2 pl-7 pr-2 rounded-md text-lg font-semibold border-2 border-solid border-dark"
+                <LanguageIcon className="absolute left-2 top-1/2 transform -translate-y-1/2 text-lg !w-5 cursor-pointer" />
+                <select className="bg-light text-dark py-2 pl-7 pr-2 rounded-md text-lg font-semibold border-2 border-solid border-dark cursor-pointer"
                     defaultValue="language"
                 >
                     <option value="language" disabled hidden>Language</option>

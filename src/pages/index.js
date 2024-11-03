@@ -8,6 +8,7 @@ const AnimatedText = dynamic(() => import('@/components/AnimatedText'), { ssr: f
 import Link from 'next/link'
 import { DownloadIcon } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <TransitionEffect/>
       <main className='flex bg-light items-center text-dark w-full min-h-screen'>
         <Layout className='py-0'>
           <div className='flex items-center justify-between w-full'>

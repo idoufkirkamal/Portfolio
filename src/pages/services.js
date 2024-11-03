@@ -4,6 +4,7 @@ import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
 import { motion } from 'framer-motion'
 import { FaCode, FaMobileAlt, FaChartLine, FaCloud, FaDatabase, FaPencilRuler , FaShoppingCart, FaServer } from 'react-icons/fa'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const serviceList = [
   {
@@ -70,6 +71,7 @@ const services = () => {
         <title>Kamal IDOUFKIR | Services</title>
         <meta name="description" content="Kamal IDOUFKIR" />
       </Head>
+      <TransitionEffect/>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText className="mb-16" text="My Services" />
