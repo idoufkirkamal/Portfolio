@@ -1,12 +1,20 @@
-import React from 'react'
-import Head from 'next/head'
-import Layout from '@/components/Layout'
-import AnimatedText from '@/components/AnimatedText'
-import { motion } from 'framer-motion'
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa'
-import TransitionEffect from '@/components/TransitionEffect'
+import React, { useState } from 'react';
+import Head from 'next/head';
+import Layout from '@/components/Layout';
+import AnimatedText from '@/components/AnimatedText';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaUser, FaComment  } from 'react-icons/fa';
+import TransitionEffect from '@/components/TransitionEffect';
 
 const contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 3000);
+  };
+
   return (
     <div>
       <Head>
@@ -19,70 +27,109 @@ const contact = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <TransitionEffect/>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText className="mb-16" text="Contact" />
           <div className="grid grid-cols-12 gap-8 w-full max-w-5xl">
-            {/* Contact Form */}
-            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="col-span-12 md:col-span-7 bg-gray-100 p-8 rounded-lg shadow-lg"
             >
-              <motion.h2 
-                initial={{ opacity: 0, y: 20 }} 
-                animate={{ opacity: 1, y: 0 }} 
-                transition={{ duration: 0.5 }} 
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
                 className="text-2xl font-bold text-left mb-4"
               >
                 Let's Bring Your Ideas to Life!
               </motion.h2>
-              <motion.h2 
-                initial={{ opacity: 0, y: 20 }} 
-                animate={{ opacity: 1, y: 0 }} 
-                transition={{ duration: 0.5 }} 
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
                 className="text-lg text-left mb-8"
               >
                 If you have any suggestions or a project in mind, please fill out the form below, and I will get back to you soon!
               </motion.h2>
 
-              <form className="space-y-6">
-                <div>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className="relative"
+                >
                   <label className="block text-sm font-medium text-gray-700">Name</label>
-                  <input
+                  <FaUser className="absolute left-3 top-10 text-gray-400" />
+                  <motion.input
+                    whileFocus={{ scale: 1.02, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}
                     type="text"
-                    className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none"
+                    className="mt-1 p-3 pl-10 w-full border border-gray-300 rounded-md focus:outline-none transition duration-300"
                     placeholder="Your Name"
+                    required
                   />
-                </div>
-                <div>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="relative"
+                >
                   <label className="block text-sm font-medium text-gray-700">Email</label>
-                  <input
+                  <FaEnvelope className="absolute left-3 top-10 text-gray-400" />
+                  <motion.input
+                    whileFocus={{ scale: 1.02, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}
                     type="email"
-                    className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none"
+                    className="mt-1 p-3 pl-10 w-full border border-gray-300 rounded-md focus:outline-none transition duration-300"
                     placeholder="Your Email"
+                    required
                   />
-                </div>
-                <div>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  className="relative"
+                >
                   <label className="block text-sm font-medium text-gray-700">Message</label>
-                  <textarea
-                    className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none"
+                  <FaComment className="absolute left-3 top-10 text-gray-400" />
+                  <motion.textarea
+                    whileFocus={{ scale: 1.02, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}
+                    className="mt-1 p-3 pl-10 w-full border border-gray-300 rounded-md focus:outline-none transition duration-300"
                     rows="4"
                     placeholder="Your Message"
+                    required
                   />
-                </div>
+                </motion.div>
+
                 <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.90 }}
+                  whileHover={{ scale: 1.01 }}
+                  whileTap={{ scale: 0.95 }}
                   type="submit"
-                  className="w-full py-3 px-6 rounded-lg bg-dark text-light p-2text-lg font-semibold transition-colors duration-300"
+                  className="w-full py-3 px-6 rounded-lg bg-dark text-light text-lg font-semibold transition-colors duration-300"
                 >
                   Send Message
                 </motion.button>
-                </form>
+              </form>
+
+              <AnimatePresence>
+                {submitted && (
+                  <motion.p
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    className="text-green-500 mt-4"
+                  >
+                    Thank you! Your message has been sent.
+                  </motion.p>
+                )}
+              </AnimatePresence>
             </motion.div>
 
             {/* Vertical Line */}
@@ -125,17 +172,20 @@ const contact = () => {
         </Layout>
       </main>
     </div>
-  )
-}
+  );
+};
 
 const ContactInfo = ({ icon, title, details }) => (
-  <div className="flex items-center space-x-4">
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    className="flex items-center space-x-4"
+  >
     <div className="p-3 bg-gray-200 rounded-full">{icon}</div>
     <div>
       <h4 className="text-lg font-semibold">{title}</h4>
       <p className="text-gray-600">{details}</p>
     </div>
-  </div>
-)
+  </motion.div>
+);
 
-export default contact
+export default contact;

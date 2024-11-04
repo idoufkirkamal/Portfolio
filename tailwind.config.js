@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 const { fontFamily } = require('tailwindcss/defaultTheme')
+const { Background } = require('tsparticles-engine')
 module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
@@ -20,6 +21,11 @@ module.exports = {
       animation:{
         'spin-slow': 'spin 8s linear infinite',
       },
+      backgroundImage: {
+        hero_shape: 'url(/images/profile/shape-1.svg)',
+        hero_shape2_light: 'url(/images/profile/shape-2-light.svg)',
+        hero_shape2_dark: 'url(/images/profile/shape-2-dark.svg)',
+      },      
     },
   },
   plugins: [],
