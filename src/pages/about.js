@@ -25,7 +25,7 @@ const about = () => {
         <TransitionEffect/>
         <main className='flex w-full flex-col items-center justify-center'>
           <Layout className='pt-16'>    
-          <AnimatedText className='mb-16' text="About me"/>         
+          <AnimatedText className='mb-16'>About me</AnimatedText>              
           <div className='grid w-full grid-cols-8 gap-16'>
             <div className='col-span-4 flex flex-col items-start justify-start'>
               <p className='font-medium'>

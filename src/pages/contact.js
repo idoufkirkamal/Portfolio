@@ -30,7 +30,7 @@ const contact = () => {
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText className="mb-16" text="Contact" />
+          <AnimatedText className='mb-16'>Contact</AnimatedText>          
           <div className="grid grid-cols-12 gap-8 w-full max-w-5xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

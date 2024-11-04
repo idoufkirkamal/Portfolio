@@ -79,7 +79,7 @@ const services = () => {
       <TransitionEffect/>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText className="mb-16" text="My Services" />
+          <AnimatedText className='mb-16'>My Services</AnimatedText>     
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {serviceList.map((service, index) => (
               <motion.div

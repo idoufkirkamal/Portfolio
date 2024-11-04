@@ -73,7 +73,7 @@ const projects = () => {
     <TransitionEffect/>
     <main className='flex w-full flex-col items-center justify-center'>
           <Layout className='pt-16'>    
-            <AnimatedText className='mb-16' text="My Projects"/>         
+            <AnimatedText className='mb-16'>My Projects</AnimatedText>        
             <div className='grid grid-cols-12 gap-24 gap-y-32'>
                 <div className='col-span-12'>
                     <Featuredproject 
