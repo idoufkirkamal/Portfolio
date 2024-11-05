@@ -6,7 +6,7 @@ import ProfilePic from "../../public/images/profile/profile1.png"
 import dynamic from 'next/dynamic';
 const AnimatedText = dynamic(() => import('@/components/AnimatedText'), { ssr: false });
 import Link from 'next/link'
-import { DownloadIcon } from '@/components/Icons'
+import { DownloadIcon, BusinessbagIcon, ClientsIcon, ProjectsIcon  } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
 import TransitionEffect from '@/components/TransitionEffect'
 import ParticlesContainer from '@/components/ParticlesContainer'
@@ -31,27 +31,27 @@ export default function Home() {
       </Head>
       
       <TransitionEffect/>
-      <main className='flex bg-light items-center text-dark w-full min-h-screen'>
-        <Layout className='py-0'>
+      <main className='flex bg-light items-center text-dark w-full min-h-[88vh]'>
+        <Layout className='py-0 !pb-0'>
         <ParticlesContainer/>
-          <div className='flex items-center justify-between w-full ml-11 -mt-16'>   
+          <div className='flex items-center justify-between w-full ml-11 -mt-20'>   
               <div className='flex relative'>
                   <Badge 
                     containerStyle="absolute top-[24%] -left-[5rem]"
-                    icon={"T"} 
+                    icon={<BusinessbagIcon className='w-[30px] h-[30px]'/>} 
                     endCountNum={3} 
                     BadgeText="Years Of Experience"
                   />
                   <Badge 
                     containerStyle="absolute top-[80%] -left-[1rem]"
-                    icon={"T"} 
+                    icon={<ProjectsIcon className='w-[28px] h-[28px]'/>} 
                     endCountNum={4} 
                     // endCountText='k'
                     BadgeText="Finished Projects"
                   />
                   <Badge 
                     containerStyle="absolute top-[55%] -right-8"
-                    icon={"T"} 
+                    icon={<ClientsIcon className='w-[31px] h-[31px]'/>} 
                     endCountNum={2} 
                     BadgeText="Happy Clients"
                   />
@@ -67,7 +67,7 @@ export default function Home() {
                     As a skilled software engineer who enjoys creating helpful, user-friendly clean and easy-to-use software, I love turning ideas into working applications that solve real problems. Explore my work to see how I can help bring your ideas to life.
                     </p>
                     <div className='flex items-center self-start mt-2 '>
-                      <Link className='flex items-center bg-dark text-light p-2.5 pl-6 pr-5 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark z-10' href="/IDOUFKIR_Kamal_CV.pdf" download={true}>
+                      <Link className='flex items-center bg-dark text-light p-2.5 pl-6 pr-5 rounded-lg text-lg font-semibold hover:bg-light hover:text-primary hover:border-primary border-2 border-solid border-transparent z-10' href="/IDOUFKIR_Kamal_CV.pdf" download={true}>
                         Download CV <DownloadIcon className={"!w-5 ml-2"}/>
                       </Link>
                     </div>

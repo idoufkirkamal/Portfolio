@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from './Logo'
 import {useRouter} from 'next/router'
 import WhatsappIcon, { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons'
@@ -23,7 +23,7 @@ const CustomLink = ({href, title, className=""}) => {
 
 const NavBar = () => {
     const [mode, setMode] = useThemSwitcher();
-
+    const [isHovered, setIsHovered] = useState(false)
   return (
     <header className='w-full px-24 py-8 font-medium flex items-center justify-between bg-light'>
         <nav className='z-10'>
@@ -68,9 +68,15 @@ const NavBar = () => {
             </button>
 
             <div className='relative ml-4'>
-                <LanguageIcon className="absolute left-2 top-1/2 transform -translate-y-1/2 text-lg !w-5 cursor-pointer ml-1" />
-                <select className="bg-light text-dark py-2 pl-8 pr-2 rounded-md text-lg font-semibold border-2 border-solid border-dark cursor-pointer"
+                <LanguageIcon 
+                    className="absolute left-2 top-1/2 transform -translate-y-1/2 text-lg !w-5 cursor-pointer ml-1" 
+                    color={isHovered ? "#0891b2" : "#1b1b1b"}
+                />
+                <select 
+                    className="bg-light text-dark hover:text-primary py-2 pl-8 pr-2 rounded-md text-lg font-semibold border-2 border-solid border-dark hover:border-primary cursor-pointer "
                     defaultValue="language"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
                 >
                     <option value="language" disabled hidden>Language</option>
                     <option value="en">English</option>

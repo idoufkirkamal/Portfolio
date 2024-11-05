@@ -1,6 +1,6 @@
 # My Portfolio 💻
 
-Welcome to my portfolio! This project showcases my skills, projects, and experience as a Software Engineer, The website created using NextJs and Tailwind Css. <br />
+Welcome to my portfolio! This project showcases my skills, projects, and experience as a Software Engineer, The website created using NextJs and Tailwind CSS. <br />
 
 🌐 **Visit the Portfolio:** [kamalidoufkir.me](https://kamalidoufkir.me)
 
@@ -15,7 +15,7 @@ Welcome to my portfolio! This project showcases my skills, projects, and experie
 ### External Libraries used in this project:
 
 - [framer-motion](https://www.framer.com/motion/) <br />
-- [Tailwind css](https://tailwindcss.com/) <br />
+- [Tailwind CSS](https://tailwindcss.com/) <br />
 
 ### Contact:
 
