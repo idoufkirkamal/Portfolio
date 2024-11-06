@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import icon1 from '../../public/images/skills_icons/1.png';
 import icon2 from '../../public/images/skills_icons/2.png';
@@ -31,16 +32,19 @@ const Skills = () => {
       <h1 className='font-bold text-8xl mb-28 w-full text-center text-dark'>Skills</h1>
       <div className='flex items-start justify-start gap-6 flex-wrap'>
         {skillsIcons.map((icon, index) => (
-          <div 
-            key={index} 
-            className='transition-transform duration-300 ease-in-out transform hover:scale-110'
+          <motion.div
+            key={index}
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.08 }}
+            viewport={{ once: true, amount: 0.1 }}
           >
-            <Image 
-              src={icon} 
-              alt={`Skill icon ${index + 1}`} 
-              className='w-28 h-28' 
+            <Image
+              src={icon}
+              alt={`Skill icon ${index + 1}`}
+              className='w-28 h-28'
             />
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

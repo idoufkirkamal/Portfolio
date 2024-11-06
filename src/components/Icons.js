@@ -508,8 +508,8 @@ export default WhatsappIcon;
 export const BusinessbagIcon = ({ className, ...rest }) => (
 <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
+    width={29}
+    height={29}
     viewBox="0 0 24 24"
     className={`w-full h-auto ${className}`}
     {...rest}
@@ -545,8 +545,8 @@ export const BusinessbagIcon = ({ className, ...rest }) => (
 export const ClientsIcon = ({ className, ...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
-  width={800}
-  height={800}
+  width={32}
+  height={32}
   viewBox="0 0 24 24"
   className={`w-full h-auto ${className}`}
   {...rest}
@@ -569,8 +569,8 @@ export const ClientsIcon = ({ className, ...rest }) => (
 export const ProjectsIcon = ({ className, ...rest }) => (
 <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
+    width={28}
+    height={28}
     viewBox="0 0 24 24"
     className={`w-full h-auto ${className}`}
     {...rest}

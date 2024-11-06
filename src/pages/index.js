@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Layout from '@/components/Layout'
-import ProfilePic from "../../public/images/profile/profile1.png"
 import dynamic from 'next/dynamic';
 const AnimatedText = dynamic(() => import('@/components/AnimatedText'), { ssr: false });
 import Link from 'next/link'
@@ -34,24 +33,24 @@ export default function Home() {
       <main className='flex bg-light items-center text-dark w-full min-h-[88vh]'>
         <Layout className='py-0 !pb-0'>
         <ParticlesContainer/>
-          <div className='flex items-center justify-between w-full ml-11 -mt-20'>   
+          <div className='flex items-center justify-between w-full ml-11 -mt-4'>   
               <div className='flex relative'>
                   <Badge 
                     containerStyle="absolute top-[24%] -left-[5rem]"
-                    icon={<BusinessbagIcon className='w-[30px] h-[30px]'/>} 
+                    icon={<BusinessbagIcon/>} 
                     endCountNum={3} 
                     BadgeText="Years Of Experience"
                   />
                   <Badge 
                     containerStyle="absolute top-[80%] -left-[1rem]"
-                    icon={<ProjectsIcon className='w-[28px] h-[28px]'/>} 
+                    icon={<ProjectsIcon/>} 
                     endCountNum={4} 
                     // endCountText='k'
                     BadgeText="Finished Projects"
                   />
                   <Badge 
                     containerStyle="absolute top-[55%] -right-8"
-                    icon={<ClientsIcon className='w-[31px] h-[31px]'/>} 
+                    icon={<ClientsIcon/>} 
                     endCountNum={2} 
                     BadgeText="Happy Clients"
                   />
