@@ -36,8 +36,10 @@ const contact = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="col-span-12 md:col-span-7 bg-gray-100 p-8 rounded-lg shadow-lg"
+              className="relative border-2 border-solid border-dark col-span-12 md:col-span-7 bg-gray-100 p-8 rounded-3xl shadow-lg"
             >
+              <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark rounded-br-[1.66rem]' />
+
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -64,8 +66,7 @@ const contact = () => {
                 >
                   <label className="block text-sm font-medium text-gray-700">Name</label>
                   <FaUser className="absolute left-3 top-10 text-gray-400" />
-                  <motion.input
-                    whileFocus={{ scale: 1.02, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}
+                  <input
                     type="text"
                     className="mt-1 p-3 pl-10 w-full border border-gray-300 rounded-md focus:outline-none transition duration-300"
                     placeholder="Your Name"
@@ -81,8 +82,7 @@ const contact = () => {
                 >
                   <label className="block text-sm font-medium text-gray-700">Email</label>
                   <FaEnvelope className="absolute left-3 top-10 text-gray-400" />
-                  <motion.input
-                    whileFocus={{ scale: 1.02, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}
+                  <input
                     type="email"
                     className="mt-1 p-3 pl-10 w-full border border-gray-300 rounded-md focus:outline-none transition duration-300"
                     placeholder="Your Email"
@@ -98,8 +98,7 @@ const contact = () => {
                 >
                   <label className="block text-sm font-medium text-gray-700">Message</label>
                   <FaComment className="absolute left-3 top-10 text-gray-400" />
-                  <motion.textarea
-                    whileFocus={{ scale: 1.02, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}
+                  <textarea
                     className="mt-1 p-3 pl-10 w-full border border-gray-300 rounded-md focus:outline-none transition duration-300"
                     rows="4"
                     placeholder="Your Message"

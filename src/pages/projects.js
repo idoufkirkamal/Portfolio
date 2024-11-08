@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useState } from "react";
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
@@ -11,30 +11,49 @@ import Project3 from '../../public/images/projects/3.jpg'
 import Project4 from '../../public/images/projects/4.jpg'
 import Project5 from '../../public/images/projects/5.jpg'
 import TransitionEffect from '@/components/TransitionEffect'
+import { motion, AnimatePresence } from "framer-motion";
 
+const Card = ({ type, title, summary, img, link, githubLink }) => {
+  const [isHovered, setIsHovered] = useState(false);
 
-const Card = ({type, title, summary, img, link, githubLink}) => {
-  return(
-    <article className='w-full h-auto flex flex-col items-center justify-center rounded-xl bg-light shadow-2xl relative'>
-    <div className="relative group w-full h-full">
+  return (
+    <article
+      className="w-full h-auto flex flex-col items-center justify-center rounded-xl bg-light shadow-2xl relative"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <Image
         src={img}
-        alt="Vancouver Mountains, Canada"
+        alt={title}
         className="rounded-lg w-full h-full transition-transform duration-300 group-hover:scale-105"
       />
-      <div className="h-auto absolute top-32 left-0 right-0 rounded-lg shadow-lg p-4 opacity-0 group-hover:opacity-100 translate-y-20 group-hover:translate-y-0 transition-all duration-300 ease-in-out border border-solid border-dark bg-white">
-        <span className='text-primary font-medium text-md'>{type}</span>
-        <h2 className='w-full text-left text-3xl font-bold mt-2 mb-4'>{title}</h2>
-        <p className="font-medium text-dark">{summary}</p>
-        <div className='w-full mt-4 flex items-center justify-between'>
-            <Link href={link} target="_blank" className='rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold'>Visit Project</Link>
-            <Link href={githubLink} target="_blank" className='w-11'><GithubIcon/></Link>
-        </div>
-        </div>
-    </div>
-  </article>
-  )
-}
+
+      <AnimatePresence>
+        {isHovered && (
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ type: "tween", duration: 0.3 }}
+            className="absolute top-32 left-4 right-4 rounded-lg shadow-lg p-4 border border-solid border-dark bg-white"
+          >
+            <span className="text-primary font-medium text-md">{type}</span>
+            <h2 className="w-full text-left text-3xl font-bold mt-2 mb-4">{title}</h2>
+            <p className="font-medium text-dark">{summary}</p>
+            <div className="w-full mt-4 flex items-center justify-between">
+              <Link href={link} target="_blank" className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold">
+                Visit Project
+              </Link>
+              <Link href={githubLink} target="_blank" className="w-11">
+                <GithubIcon />
+              </Link>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </article>
+  );
+};
 
 
 const Featuredproject = ({type, title, summary, img, link, githubLink}) => {
@@ -75,7 +94,7 @@ const projects = () => {
     <main className='flex w-full flex-col items-center justify-center'>
           <Layout className='pt-16'>    
             <AnimatedText className='mb-16'>My Projects</AnimatedText>        
-            <div className='grid grid-cols-12 gap-24 gap-y-44 mb-24'>
+            <div className='grid grid-cols-12 gap-24 gap-y-40 mb-24'>
                 <div className='col-span-12'>
                     <Featuredproject 
                       type="Portfolio Website"

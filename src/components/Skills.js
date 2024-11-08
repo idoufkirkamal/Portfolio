@@ -36,7 +36,7 @@ const Skills = () => {
             key={index}
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.08 }}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.07 }}
             viewport={{ once: true, amount: 0.1 }}
           >
             <Image
