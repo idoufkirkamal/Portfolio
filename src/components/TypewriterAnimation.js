@@ -5,13 +5,13 @@ const TypewriterAnimation = () => {
     return (
         <TypeAnimation
           sequence={[
-            'Clean',
-            3000,
             'Powerful',
             3000,
-            'User-Friendly',
-            3000,
             'Modern',
+            3000,
+            'Clean',
+            3000,
+            'User-Friendly',
             3000,
             'Secure',
             3000
@@ -20,6 +20,7 @@ const TypewriterAnimation = () => {
           speed={10}
           style={{ display: 'inline-block' }}
           repeat={Infinity}
+          className='text-primary'
         />
       );
 }

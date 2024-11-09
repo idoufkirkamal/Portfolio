@@ -33,7 +33,7 @@ export default function Home() {
       <main className='flex bg-light items-center text-dark w-full min-h-[88vh]'>
         <Layout className='py-0 !pb-0'>
         <ParticlesContainer/>
-          <div className='flex items-center justify-between w-full ml-11 -mt-4'>   
+          <div className='flex items-center justify-between w-full ml-11'>   
               <div className='flex relative'>
                   <Badge 
                     containerStyle="absolute top-[24%] -left-[5rem]"
@@ -59,11 +59,15 @@ export default function Home() {
               
               </div>
               <div className='w-1/2 flex flex-col items-center self-center'>
-                <AnimatedText className='!text-5xl text-left z-10'>
-                  Turning Ideas into <TypewriterAnimation /> Software!
-                </AnimatedText>
+              <AnimatedText className='!text-[2.9rem] text-left z-10'>
+                <span>Turning Ideas into</span>
+                <br />
+                <span>
+                  <TypewriterAnimation /> Software!
+                </span>
+              </AnimatedText>
                     <p className='my-4 text-base font-medium z-10'>
-                    As a skilled software engineer who enjoys creating helpful, user-friendly clean and easy-to-use software, I love turning ideas into working applications that solve real problems. Explore my work to see how I can help bring your ideas to life.
+                    As a skilled software engineer who enjoys creating helpful, user-friendly, clean and easy-to-use software, I love turning ideas into working applications that solve real problems. Explore my work to see how I can help bring your ideas to life.
                     </p>
                     <div className='flex items-center self-start mt-2 '>
                       <Link className='flex items-center bg-dark text-light p-2.5 pl-6 pr-5 rounded-lg text-lg font-semibold hover:bg-light hover:text-primary hover:border-primary border-2 border-solid border-transparent z-10' href="/IDOUFKIR_Kamal_CV.pdf" download={true}>

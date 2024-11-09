@@ -42,9 +42,8 @@ const about = () => {
                is intuitive and impactful. I look forward to the opportunity to bring my skills and passion to your next project.
               </p>
             </div>
-            <div className='col-span-4 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8'>
-              <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark rounded-br-[1.66rem]'/>
-              <Image src={profilePic} alt="Kamal IDOUFKIR" className='w-full h-auto rounded-2xl'  draggable="false" />
+            <div className='col-span-4'>
+                Image
             </div>
           </div>
           <Skills />
