@@ -5,6 +5,7 @@ import AnimatedText from '@/components/AnimatedText'
 import { motion } from 'framer-motion'
 import { FaCode, FaMobileAlt, FaChartLine, FaCloud, FaDatabase, FaPencilRuler , FaShoppingCart, FaServer } from 'react-icons/fa'
 import TransitionEffect from '@/components/TransitionEffect'
+import { ServicesTitle } from '@/components/TitlesBackground';
 
 const serviceList = [
   {
@@ -79,7 +80,20 @@ const services = () => {
       <TransitionEffect/>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText className='mb-16'>My Services</AnimatedText>     
+            {/* Contact Banner */}
+            <div className="text-center mb-12 relative">
+              {/* Background svg */}
+              <div className="absolute inset-0 flex justify-center items-center ">
+                <ServicesTitle />
+              </div>
+              {/* Foreground Text */}      
+              <h2 className="relative font-extrabold mb-16">
+                <AnimatedText className='!text-5xl'>
+                    <span className="mr-3 !text-gray-700 uppercase">My</span>
+                    <span className="text-primary uppercase">Services</span>
+                </AnimatedText>    
+              </h2>
+            </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {serviceList.map((service, index) => (
               <motion.div

@@ -9,6 +9,7 @@ import Experience from '@/components/Experience'
 import Education from '@/components/Education' 
 import Certificates from '@/components/Certificates' 
 import TransitionEffect from '@/components/TransitionEffect'
+import { AboutTitle } from '@/components/TitlesBackground'
 
 const about = () => {
   return (
@@ -24,8 +25,21 @@ const about = () => {
       </Head>
         <TransitionEffect/>
         <main className='flex w-full flex-col items-center justify-center'>
-          <Layout className='pt-16'>    
-          <AnimatedText className='mb-16'>About me</AnimatedText>              
+          <Layout className='pt-16'>  
+          {/* Contact Banner */}
+          <div className="text-center mb-12 relative">  
+            {/* Background svg */}
+              <div className="absolute inset-0 flex justify-center items-center ">
+                <AboutTitle />
+              </div>
+              {/* Foreground Text */}      
+              <h2 className="relative font-extrabold mb-16">
+                <AnimatedText className='!text-5xl'>
+                    <span className="mr-3 !text-gray-700 uppercase">About</span>
+                    <span className="text-primary uppercase">Me</span>
+                </AnimatedText>    
+              </h2>
+            </div>         
           <div className='grid w-full grid-cols-8 gap-16'>
             <div className='col-span-4 flex flex-col items-start justify-start'>
               <p className='font-medium'>

@@ -12,6 +12,7 @@ import Project4 from '../../public/images/projects/4.jpg';
 import Project5 from '../../public/images/projects/5.jpg';
 import TransitionEffect from '@/components/TransitionEffect';
 import { motion, AnimatePresence } from "framer-motion";
+import { ProjectsTitle } from "@/components/TitlesBackground";
 
 const Card = ({ type, title, summary, img, link, githubLink }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -102,8 +103,20 @@ const Projects = () => {
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText className="mb-16">My Projects</AnimatedText>
-          
+          {/* Contact Banner */}
+            <div className="text-center mb-12 relative">
+              {/* Background svg */}
+              <div className="absolute inset-0 flex justify-center items-center ">
+                <ProjectsTitle />
+              </div>
+              {/* Foreground Text */}      
+              <h2 className="relative font-extrabold mb-16">
+                <AnimatedText className='!text-5xl'>
+                    <span className="mr-3 !text-gray-700 uppercase">My</span>
+                    <span className="text-primary uppercase">Projects</span>
+                </AnimatedText>    
+              </h2>
+            </div>
           {/* Filter Buttons */}
           <div className="flex space-x-4 mb-8 items-center justify-center">
             {["All", "Web Project", "Mobile App", "Design"].map(category => (

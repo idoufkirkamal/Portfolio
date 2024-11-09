@@ -4,8 +4,8 @@ import Layout from '@/components/Layout';
 import AnimatedText from '@/components/AnimatedText';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
-import { ContactTitle } from '@/components/Icons';
 import TransitionEffect from '@/components/TransitionEffect';
+import { ContactTitle } from '@/components/TitlesBackground';
 
 const contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -32,7 +32,21 @@ const contact = () => {
       <main className="flex w-full flex-col items-center justify-center">
        <Layout className="pt-16">
       <div className="container mx-auto">
-      <AnimatedText className="mb-16">Contact</AnimatedText>
+      {/* Contact Banner */}
+      <div className="text-center mb-12 relative">
+        {/* Background svg */}
+        <div className="absolute inset-0 flex justify-center items-center ">
+          <ContactTitle/>
+        </div>
+        {/* Foreground Text */}      
+        <h2 className="relative font-extrabold mb-16">
+          <AnimatedText className='!text-5xl'>
+              <span className="mr-3 !text-gray-700 uppercase">Get</span>
+              <span className="mr-3 !text-gray-700 uppercase">in</span>
+              <span className="text-primary uppercase">Touch</span>
+          </AnimatedText>    
+        </h2>
+      </div>
 
       {/* Main Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
