@@ -18,7 +18,7 @@ import icon14 from '../../public/images/skills_icons/14.png';
 import icon15 from '../../public/images/skills_icons/15.png';
 import icon16 from '../../public/images/skills_icons/16.png';
 import icon17 from '../../public/images/skills_icons/17.png';
-import { AboutTitle } from './TitlesBackground';
+import { SkillsTitle } from './TitlesBackground';
 import AnimatedText from './AnimatedText';
 
 const skillsIcons = [
@@ -35,7 +35,7 @@ const Skills = () => {
       <div className="text-center mb-12 relative">  
         {/* Background svg */}
           <div className="absolute inset-0 flex justify-center items-center ">
-            <AboutTitle />
+            <SkillsTitle />
           </div>
           {/* Foreground Text */}      
           <h2 className="relative font-extrabold mb-20">
@@ -45,23 +45,28 @@ const Skills = () => {
             </AnimatedText>    
           </h2>
         </div>  
-      <div className='flex items-start justify-start gap-6 flex-wrap'>
-        {skillsIcons.map((icon, index) => (
-          <motion.div
-            key={index}
-            initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.06 }}
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            <Image
-              src={icon}
-              alt={`Skill icon ${index + 1}`}
-              className='w-28 h-28'
-            />
-          </motion.div>
-        ))}
-      </div>
+        <div>
+        <div className="flex justify-center">
+  <div className="grid grid-cols-7 gap-6 w-full max-w-4xl">
+    {skillsIcons.map((icon, index) => (
+      <motion.div
+        key={index}
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, ease: 'easeOut', delay: index * 0.06 }}
+        viewport={{ once: true, amount: 0.08 }}
+      >
+        <Image
+          src={icon}
+          alt={`Skill icon ${index + 1}`}
+          className="w-28 h-28"
+        />
+      </motion.div>
+    ))}
+  </div>
+</div>
+
+        </div>
     </div>
   );
 };

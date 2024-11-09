@@ -65,6 +65,8 @@ const serviceList = [
     circleColor: 'bg-orange-200 group-hover:bg-light',
   },
 ]
+
+
 const services = () => {
   return (
     <div>
@@ -103,7 +105,7 @@ const services = () => {
                 transition={{ duration: 0.3, delay: index * 0.2 }}
                 className="group relative p-6 rounded-lg shadow-lg flex flex-col items-center text-center bg-gray-100 transition-colors duration-300 border border-solid border-gray-500"
               >
-                {/* Circular Icon Background with hover color change */}
+
                 <div className={`relative mb-4 p-4 rounded-full transition-colors duration-300 z-10 ${service.circleColor}`}>
                   {service.icon}
                 </div>
@@ -114,7 +116,6 @@ const services = () => {
                   {service.description}
                 </p>
 
-                {/* Bottom line with purple color, animating from bottom to top on hover */}
                 <div className={`absolute bottom-0 left-0 w-full rounded-lg ${service. backgroundColor} z-0 h-1 opacity-0 group-hover:opacity-100 group-hover:h-full transition-all duration-500 ease-in-out`} />
               </motion.div>
             ))}

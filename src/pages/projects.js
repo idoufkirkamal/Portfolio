@@ -42,7 +42,7 @@ const Card = ({ type, title, summary, img, link, githubLink }) => {
             <h2 className="w-full text-left text-3xl font-bold mt-2 mb-4">{title}</h2>
             <p className="font-medium text-dark line-clamp-4">{summary}</p>
             <div className="w-full mt-4 flex items-center justify-between">
-              <Link href={link} target="_blank" className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold">
+              <Link href={link} target="_blank" className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold hover:bg-primary">
                 Visit Project
               </Link>
               <Link href={githubLink} target="_blank" className="w-11">
@@ -59,13 +59,13 @@ const Card = ({ type, title, summary, img, link, githubLink }) => {
 const FeaturedProject = ({ type, title, summary, img, link, githubLink }) => {
   return (
     <article className="w-full flex items-center justify-between rounded-xl border border-solid border-gray-500 bg-light shadow-lg p-10">
-      <Link href={link} target="_blank" className="w-1/2 cursor-pointer overflow-hidden rounded-lg group">
+      <div className="w-1/2 overflow-hidden rounded-lg group">
         <Image
           src={img}
           alt={title}
           className="w-full h-auto transition-transform duration-500 ease-in-out transform group-hover:scale-105 rounded-lg"
         />
-      </Link>
+      </div>
       <div className="w-1/2 flex flex-col items-start justify-between pl-8">
         <span className="text-primary font-semibold text-xl">{type}</span>
         <h2 className="my-3 w-full text-left text-4xl font-bold leading-tight">{title}</h2>
@@ -85,11 +85,47 @@ const FeaturedProject = ({ type, title, summary, img, link, githubLink }) => {
 
 
 const projectsData = [
-  { type: "Web Project", title: "This Portfolio", summary: "A feature-rich Crypto Screener App A feature-rich Crypto Screener App A feature-rich Crypto Screener App", img: Project1, link: "https://www.kamalidoufkir.me", githubLink: "https://github.com/idoufkirkamal/Portfolio", featuredProject: true },
-  { type: "Web Project", title: "Agency Website Template", summary: "A rich Crypto Screener App A feature-rrich Crypto Screener App A feature-r feature-rich rich rich Crypto Screener App A feature-r Crypto Screener App A feature-r Crypto Screener App A feature-rich Crypto Screener App A feature-rich Crypto Screener App", img: Project2, link: "/", githubLink: "/" },
-  { type: "Mobile App", title: "Mobile App Template", summary: "A feature-rich Crypto Screener App A feature-rich Crypto Screener App A feature-rich Crypto Screener App", img: Project3, link: "/", githubLink: "/" },
-  { type: "Design", title: "Design Project", summary: "A feature-rich Crypto Screener App A feature-rich Crypto Screener App A feature-rich Crypto Screener App", img: Project4, link: "/", githubLink: "/" },
-  { type: "Web Project", title: "E-commerce Template", summary: "A feature-rich Crypto Screener App A feature-rich Crypto Screener App A feature-rich Crypto Screener App", img: Project5, link: "/", githubLink: "/" },
+  { 
+    type: "Web Project", 
+    title: "This Portfolio", 
+    summary: "A feature-rich Crypto Screener App A feature-rich Crypto Screener App A feature-rich Crypto Screener App", 
+    img: Project1, 
+    link: "https://www.kamalidoufkir.me", 
+    githubLink: "https://github.com/idoufkirkamal/Portfolio", 
+    featuredProject: true 
+  },
+  { 
+    type: "Web Project", 
+    title: "Agency Website Template", 
+    summary: "A rich Crypto Screener App A feature-rrich Crypto Screener App A feature-r feature-rich rich rich Crypto Screener App A feature-r Crypto Screener App A feature-r Crypto Screener App A feature-rich Crypto Screener App A feature-rich Crypto Screener App", 
+    img: Project2, 
+    link: "/", 
+    githubLink: "/" 
+  },
+  { 
+    type: "Mobile App", 
+    title: "Mobile App Template", 
+    summary: "A feature-rich Crypto Screener App A feature-rich Crypto Screener App A feature-rich Crypto Screener App", 
+    img: Project3, 
+    link: "/", 
+    githubLink: "/" 
+  },
+  { 
+    type: "Design", 
+    title: "Design Project", 
+    summary: "A feature-rich Crypto Screener App A feature-rich Crypto Screener App A feature-rich Crypto Screener App", 
+    img: Project4, 
+    link: "/", 
+    githubLink: "/" 
+  },
+  { 
+    type: "Web Project", 
+    title: "E-commerce Template", 
+    summary: "A feature-rich Crypto Screener App A feature-rich Crypto Screener App A feature-rich Crypto Screener App", 
+    img: Project5, 
+    link: "/", 
+    githubLink: "/" 
+  }
 ];
 
 const Projects = () => {

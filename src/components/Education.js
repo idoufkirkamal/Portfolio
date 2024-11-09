@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll } from "framer-motion";
 import LiIcon from './LiIcon';
-import { AboutTitle } from './TitlesBackground';
+import { EducationTitle } from './TitlesBackground';
 import AnimatedText from './AnimatedText';
 
 const Details = ({ type, time, place, info }) => {
@@ -31,53 +31,62 @@ const Details = ({ type, time, place, info }) => {
 
 const Education = () => {
     const ref = useRef(null);
-    const { scrollYProgress } = useScroll(
-        {
-            target: ref,
-            offset: ["start end", "center start"]
-        }
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["start end", "center start"]
+    });
 
-    )
+    const educationDetails = [
+        {
+            type: "Bachelor Of Science In Computer Science",
+            time: "2016-2020",
+            place: "Massachusetts Institute Of Technology (MIT)",
+            info: "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+        },
+        {
+            type: "Master Of Science In Artificial Intelligence",
+            time: "2021-2023",
+            place: "Stanford University",
+            info: "Specialized in Machine Learning, Deep Learning, and Natural Language Processing."
+        },
+        {
+            type: "PhD in Computer Science",
+            time: "2024-Present",
+            place: "Harvard University",
+            info: "Research focuses on Advanced AI Algorithms and Quantum Computing."
+        }
+    ];
 
     return (
         <div className='my-32'>
             {/* Education Banner */}
-            <div className="text-center mb-12 relative">  
+            <div className="text-center mb-12 relative">
                 {/* Background svg */}
                 <div className="absolute inset-0 flex justify-center items-center ">
-                    <AboutTitle />
+                    <EducationTitle />
                 </div>
-                {/* Foreground Text */}      
+                {/* Foreground Text */}
                 <h2 className="relative font-extrabold mb-20">
                     <AnimatedText className='!text-5xl'>
                         <span className="mr-3 !text-gray-700 uppercase">My</span>
                         <span className="text-primary uppercase">Education</span>
-                    </AnimatedText>    
+                    </AnimatedText>
                 </h2>
-                </div> 
+            </div> 
             <div ref={ref} className='w-[75%] mx-auto relative'>
                 <motion.div 
                 style={{scaleY: scrollYProgress}}
                 className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'/>
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
-                    <Details
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-                    />
-                    <Details
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-                    />
-                    <Details
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-                    />
+                    {educationDetails.map((education, index) => (
+                        <Details
+                            key={index}
+                            type={education.type}
+                            time={education.time}
+                            place={education.place}
+                            info={education.info}
+                        />
+                    ))}
                 </ul>
             </div>
         </div>

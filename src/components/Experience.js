@@ -1,18 +1,18 @@
 import React, { useRef } from 'react';
-import { motion, useScroll } from "framer-motion"
+import { motion, useScroll } from "framer-motion";
 import LiIcon from './LiIcon';
-import { AboutTitle } from './TitlesBackground';
+import { ExperienceTitle } from './TitlesBackground';
 import AnimatedText from './AnimatedText';
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
     const ref = useRef(null);
     return (
         <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[90%] mx-auto flex flex-col items-center justify-between'>
-           <LiIcon reference={ref}/>
+           <LiIcon reference={ref} />
             <motion.div
-            initial={{y:50}}
-            whileInView={{y:0}}
-            transition={{duration:0.5, type:"spring"}}
+            initial={{ y: 50 }}
+            whileInView={{ y: 0 }}
+            transition={{ duration: 0.5, type: "spring" }}
             className='ml-20'
             >
                 <h3 className='capitalize font-bold text-2xl text-dark'>
@@ -31,75 +31,62 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
 const Experience = () => {
     const ref = useRef(null);
-    const { scrollYProgress } = useScroll(
-        {
-            target: ref,
-            offset: ["start end", "center start"],
-        }
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["start end", "center start"],
+    });
 
-    )
+    const experienceData = [
+        {
+            position: "Software Engineer",
+            company: "Google",
+            companyLink: "https://www.google.com",
+            time: "2022-Present",
+            address: "Mountain View, CA",
+            work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+        },
+        {
+            position: "Software Engineer",
+            company: "Google",
+            companyLink: "https://www.google.com",
+            time: "2022-Present",
+            address: "Mountain View, CA",
+            work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+        },
+    ];
 
     return (
         <div className='my-32'>
-            {/* Skills Banner */}
+            {/* Experience Banner */}
             <div className="text-center mb-12 relative">  
                 {/* Background svg */}
                 <div className="absolute inset-0 flex justify-center items-center ">
-                    <AboutTitle />
+                    <ExperienceTitle />
                 </div>
-                {/* Foreground Text */}      
+                {/* Foreground Text */}
                 <h2 className="relative font-extrabold mb-20">
                     <AnimatedText className='!text-5xl'>
                         <span className="mr-3 !text-gray-700 uppercase">My</span>
                         <span className="text-primary uppercase">Experience</span>
                     </AnimatedText>    
                 </h2>
-                </div> 
+            </div>
             <div ref={ref} className='w-[75%] mx-auto relative'>
                 <motion.div 
-                style={{scaleY: scrollYProgress}}
-                className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'/>
+                    style={{ scaleY: scrollYProgress }}
+                    className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'/>
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
-                    <Details
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="https://www.google.com"
-                        time="2022-Present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-                        search engine, including improving the accuracy and relevance of search results and 
-                        developing new tools for data analysis and visualization."
-                    />
-                    <Details
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="https://www.google.com"
-                        time="2022-Present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-                        search engine, including improving the accuracy and relevance of search results and 
-                        developing new tools for data analysis and visualization."
-                    />
-                    <Details
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="https://www.google.com"
-                        time="2022-Present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-                        search engine, including improving the accuracy and relevance of search results and 
-                        developing new tools for data analysis and visualization."
-                    />
-                    <Details
-                        position="Software Engineer"
-                        company="Google"
-                        companyLink="https://www.google.com"
-                        time="2022-Present"
-                        address="Mountain View, CA"
-                        work="Worked on a team responsible for developing new features for Google's 
-                        search engine, including improving the accuracy and relevance of search results and 
-                        developing new tools for data analysis and visualization."
-                    />
+                    {experienceData.map((exp, index) => (
+                        <Details
+                            key={index}
+                            position={exp.position}
+                            company={exp.company}
+                            companyLink={exp.companyLink}
+                            time={exp.time}
+                            address={exp.address}
+                            work={exp.work}
+                        />
+                    ))}
                 </ul>
             </div>
         </div>
