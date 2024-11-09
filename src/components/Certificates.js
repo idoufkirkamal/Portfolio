@@ -6,6 +6,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { AboutTitle } from './TitlesBackground'
+import AnimatedText from './AnimatedText'
 
 const Card = ({ site, title, img, link }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -52,8 +54,21 @@ const Card = ({ site, title, img, link }) => {
 const Certificates = () => {
   return (
     <>
-    <h1 className='font-bold text-8xl mt-40 w-full text-center text-dark'>Certificates</h1>
-    <div className='grid grid-cols-12 gap-16 pt-16 mt-10'>
+    {/* Skills Banner */}
+    <div className="text-center mb-12 relative">  
+      {/* Background svg */}
+        <div className="absolute inset-0 flex justify-center items-center ">
+          <AboutTitle />
+        </div>
+        {/* Foreground Text */}      
+        <h2 className="relative font-extrabold mb-20">
+          <AnimatedText className='!text-5xl'>
+              <span className="mr-3 !text-gray-700 uppercase">My</span>
+              <span className="text-primary uppercase">Certificates</span>
+          </AnimatedText>    
+        </h2>
+      </div> 
+    <div className='grid grid-cols-12 gap-16'>
         <div className='col-span-6 flex'>
             <Card 
               site="Udemy"

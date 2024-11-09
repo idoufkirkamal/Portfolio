@@ -111,7 +111,7 @@ const Projects = () => {
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
-          {/* Contact Banner */}
+          {/* Projects Banner */}
             <div className="text-center mb-12 relative">
               {/* Background svg */}
               <div className="absolute inset-0 flex justify-center items-center ">

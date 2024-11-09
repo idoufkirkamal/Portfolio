@@ -18,6 +18,8 @@ import icon14 from '../../public/images/skills_icons/14.png';
 import icon15 from '../../public/images/skills_icons/15.png';
 import icon16 from '../../public/images/skills_icons/16.png';
 import icon17 from '../../public/images/skills_icons/17.png';
+import { AboutTitle } from './TitlesBackground';
+import AnimatedText from './AnimatedText';
 
 const skillsIcons = [
   icon1, icon2, icon3, icon4, icon5,
@@ -29,7 +31,20 @@ const skillsIcons = [
 const Skills = () => {
   return (
     <div className='mt-32'>
-      <h1 className='font-bold text-8xl mb-28 w-full text-center text-dark'>Skills</h1>
+      {/* Skills Banner */}
+      <div className="text-center mb-12 relative">  
+        {/* Background svg */}
+          <div className="absolute inset-0 flex justify-center items-center ">
+            <AboutTitle />
+          </div>
+          {/* Foreground Text */}      
+          <h2 className="relative font-extrabold mb-20">
+            <AnimatedText className='!text-5xl'>
+                <span className="mr-3 !text-gray-700 uppercase">My</span>
+                <span className="text-primary uppercase">Skills</span>
+            </AnimatedText>    
+          </h2>
+        </div>  
       <div className='flex items-start justify-start gap-6 flex-wrap'>
         {skillsIcons.map((icon, index) => (
           <motion.div
