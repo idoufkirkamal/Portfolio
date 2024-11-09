@@ -54,7 +54,7 @@ const contact = () => {
         <div>
           <h3 className="text-2xl font-bold text-gray-700 mb-4">Let's Bring Your Ideas to Life!</h3>
           <p className="text-gray-600 mb-6">
-          If you have any suggestions or a project in mind, please fill out the form below, and I will get back to you soon!
+          If you have any suggestions or a project in mind, please fill out the form, and I will get back to you soon!
           </p>
           {/* Contact Details */}
           <motion.div

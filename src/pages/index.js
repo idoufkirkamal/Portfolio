@@ -10,7 +10,7 @@ import HireMe from '@/components/HireMe'
 import TransitionEffect from '@/components/TransitionEffect'
 import ParticlesContainer from '@/components/ParticlesContainer'
 import TypewriterAnimation from '@/components/TypewriterAnimation'
-import DevImg from '@/components/DevImg'
+import DevImg from '../../public/images/profile/developer.png'
 import Badge from '@/components/Badge'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -55,7 +55,9 @@ export default function Home() {
                     BadgeText="Happy Clients"
                   />
                   <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark bg-no-repeat w-[400px] h-[400px] absolute -top-1 -right-2'></div>
-                   <DevImg containerStyles="bg-hero_shape w-[410px] h-[362px] bg-no-repeat relative bg-bottom" imgSrc='/images/profile/developer.png'/> 
+                   <div className="bg-hero_shape w-[410px] h-[362px] bg-no-repeat relative bg-bottom" >
+                     <Image src={DevImg} fill priority alt="Kamal IDOUFKIR Profile Image" draggable="false" />
+                   </div>
               
               </div>
               <div className='w-1/2 flex flex-col items-center self-center'>

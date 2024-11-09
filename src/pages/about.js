@@ -54,7 +54,7 @@ const about = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <h1 className="text-5xl font-bold text-primary">Kamal IDOUFKIR</h1>
+                <h1 className="text-5xl font-bold text-primary"><span className='!mr-3 !text-gray-700'>Kamal</span>IDOUFKIR</h1>
                 <p className="text-gray-600 text-lg">Software Engineer</p>
               </motion.div>
 
@@ -73,12 +73,13 @@ const about = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
               >
-                <div className="flex-shrink-0">
+                <div className="relative flex-shrink-0">
                   <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    transition={{ duration: 0.5, delay: 0.8 }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
                   >
+                    {/* Profile Picture */}
                     <Image
                       src={profilePic}
                       alt="Profile Picture"
@@ -88,12 +89,16 @@ const about = () => {
                       draggable="false"
                     />
                   </motion.div>
+                  {/* Small Circle with Emoji */}
+                  <div className="absolute bottom-4 right-3 transform translate-x-1/4 translate-y-1/4 bg-white w-9 h-9 rounded-full flex items-center justify-center border border-gray-300 shadow-md">
+                    <span className="text-lg">👋</span>
+                  </div>
                 </div>
                 <motion.div
                   className="mt-4 ml-9"
                   initial={{ opacity: 0, x: 50 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 1 }}
+                  transition={{ duration: 0.5, delay: 0.8 }}
                 >
                   <p className="font-medium text-left mb-2">
                     Hi, I’m Kamal, a Software Engineer from Morocco and currently pursuing a Master’s degree in Software Engineering. My work centers on clear design, clean code, and thoughtful problem-solving. I’m always exploring new tools and technologies to keep my work fresh and effective. Every project I take on is an opportunity to learn, improve, and make an impact.
