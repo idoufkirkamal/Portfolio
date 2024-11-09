@@ -101,7 +101,7 @@ const services = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.2 }}
-                className="group relative p-6 rounded-lg shadow-lg flex flex-col items-center text-center bg-gray-100 transition-colors duration-300"
+                className="group relative p-6 rounded-lg shadow-lg flex flex-col items-center text-center bg-gray-100 transition-colors duration-300 border border-solid border-gray-500"
               >
                 {/* Circular Icon Background with hover color change */}
                 <div className={`relative mb-4 p-4 rounded-full transition-colors duration-300 z-10 ${service.circleColor}`}>

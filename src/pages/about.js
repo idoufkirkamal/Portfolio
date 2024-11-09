@@ -33,7 +33,7 @@ const about = () => {
                 <AboutTitle />
               </div>
               {/* Foreground Text */}      
-              <h2 className="relative font-extrabold mb-16">
+              <h2 className="relative font-extrabold mb-20">
                 <AnimatedText className='!text-5xl'>
                     <span className="mr-3 !text-gray-700 uppercase">About</span>
                     <span className="text-primary uppercase">Me</span>

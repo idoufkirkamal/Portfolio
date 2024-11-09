@@ -12,7 +12,7 @@ const Card = ({ site, title, img, link }) => {
 
   return (
     <article
-      className="w-full h-auto flex flex-col items-center justify-center rounded-xl bg-light shadow-xl relative"
+      className="w-full h-auto flex flex-col items-center justify-center rounded-lg bg-light shadow-xl relative border border-solid border-gray-500"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

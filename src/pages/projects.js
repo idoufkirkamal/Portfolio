@@ -19,7 +19,7 @@ const Card = ({ type, title, summary, img, link, githubLink }) => {
 
   return (
     <article
-      className="w-full h-auto flex flex-col items-center justify-center rounded-xl bg-light shadow-2xl relative"
+      className="w-full h-auto flex flex-col items-center justify-center rounded-lg bg-light shadow-2xl relative border border-solid border-gray-500"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -58,23 +58,31 @@ const Card = ({ type, title, summary, img, link, githubLink }) => {
 
 const FeaturedProject = ({ type, title, summary, img, link, githubLink }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-[1.88rem]" />
+    <article className="w-full flex items-center justify-between rounded-xl border border-solid border-gray-500 bg-light shadow-lg p-10">
       <Link href={link} target="_blank" className="w-1/2 cursor-pointer overflow-hidden rounded-lg group">
-        <Image src={img} alt={title} className="w-full h-auto transform transition-transform duration-500 ease-in-out group-hover:scale-105" />
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto transition-transform duration-500 ease-in-out transform group-hover:scale-105 rounded-lg"
+        />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl">{type}</span>
-        <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
-        <p className="my-2 font-medium text-dark">{summary}</p>
-        <div className="mt-2 flex items-center">
-          <Link href={githubLink} target="_blank" className="w-11"><GithubIcon /></Link>
-          <Link href={link} target="_blank" className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold">Visit Project</Link>
+      <div className="w-1/2 flex flex-col items-start justify-between pl-8">
+        <span className="text-primary font-semibold text-xl">{type}</span>
+        <h2 className="my-3 w-full text-left text-4xl font-bold leading-tight">{title}</h2>
+        <p className="my-4 font-medium text-dark text-lg leading-relaxed">{summary}</p>
+        <div className="mt-4 flex items-center">
+          <Link href={githubLink} target="_blank" className="w-10 h-10">
+            <GithubIcon className="w-full h-full text-dark" />
+          </Link>
+          <Link href={link} target="_blank" className="ml-6 rounded-lg bg-dark text-light py-2 px-6 text-lg font-semibold hover:bg-primary transition-colors duration-300">
+            Visit Project
+          </Link>
         </div>
       </div>
     </article>
   );
 };
+
 
 const projectsData = [
   { type: "Web Project", title: "This Portfolio", summary: "A feature-rich Crypto Screener App A feature-rich Crypto Screener App A feature-rich Crypto Screener App", img: Project1, link: "https://www.kamalidoufkir.me", githubLink: "https://github.com/idoufkirkamal/Portfolio", featuredProject: true },
