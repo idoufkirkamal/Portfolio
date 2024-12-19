@@ -70,7 +70,7 @@ const NavBar = () => {
             <div className='relative ml-4'>
                 <LanguageIcon 
                     className="absolute left-2 top-1/2 transform -translate-y-1/2 text-lg !w-5 cursor-pointer ml-1" 
-                    color={isHovered ? "#0891b2" : "#1b1b1b"}
+                    color={isHovered ? "#676194" : "#1b1b1b"}
                 />
                 <select 
                     className="bg-light text-dark hover:text-primary py-2 pl-8 pr-2 rounded-md text-lg font-semibold border-2 border-solid border-dark hover:border-primary cursor-pointer "

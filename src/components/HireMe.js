@@ -10,8 +10,8 @@ const HireMe = () => {
       <div className='w-48 h-auto flex items-center justify-center relative'>
         <CircularText
           className="animate-spin-slow"
-          backgroundColor={isHovered ? "#0891b2" : "#1b1b1b"}
-          strokeColor={isHovered ? "#0891b2" : "#1b1b1b"}
+          backgroundColor={isHovered ? "#676194" : "#1b1b1b"}
+          strokeColor={isHovered ? "#676194" : "#1b1b1b"}
         />
         <Link 
           href="mailto:idoufkir.kamal@gmail.com"

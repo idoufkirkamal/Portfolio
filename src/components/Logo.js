@@ -11,7 +11,7 @@ const Logo = () => {
         href="/" 
         className='w-16 h-16 bg-black text-white flex items-center justify-center rounded-full text-3xl font-bold'
         whileHover={{ 
-          backgroundColor: ["#0891b2"],
+          backgroundColor: ["#676194"],
           transition: { duration: 1, ease: "easeInOut", repeat: Infinity },
         }}
         initial={{ backgroundColor: "#333333" }} 
