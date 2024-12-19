@@ -18,6 +18,12 @@ import icon14 from '../../public/images/skills_icons/14.png';
 import icon15 from '../../public/images/skills_icons/15.png';
 import icon16 from '../../public/images/skills_icons/16.png';
 import icon17 from '../../public/images/skills_icons/17.png';
+import icon18 from '../../public/images/skills_icons/18.png';
+import icon19 from '../../public/images/skills_icons/19.png';
+import icon20 from '../../public/images/skills_icons/20.png';
+import icon21 from '../../public/images/skills_icons/21.png';
+
+
 import { SkillsTitle } from './TitlesBackground';
 import AnimatedText from './AnimatedText';
 
@@ -25,7 +31,8 @@ const skillsIcons = [
   icon1, icon2, icon3, icon4, icon5,
   icon6, icon7, icon8, icon9, icon10,
   icon11, icon12, icon13, icon14, icon15,
-  icon16, icon17
+  icon16, icon17, icon18, icon19, icon20,
+  icon21
 ];
 
 const Skills = () => {
@@ -60,6 +67,7 @@ const Skills = () => {
           src={icon}
           alt={`Skill icon ${index + 1}`}
           className="w-28 h-28"
+          draggable="false"
         />
       </motion.div>
     ))}

@@ -10,7 +10,7 @@ import HireMe from '@/components/HireMe'
 import TransitionEffect from '@/components/TransitionEffect'
 import ParticlesContainer from '@/components/ParticlesContainer'
 import TypewriterAnimation from '@/components/TypewriterAnimation'
-import DevImg from '../../public/images/profile/developer.png'
+import DevImg from '../../public/images/profile/Profile-Img1.png'
 import Badge from '@/components/Badge'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -36,9 +36,9 @@ export default function Home() {
           <div className='flex items-center justify-between w-full ml-11'>   
               <div className='flex relative'>
                   <Badge 
-                    containerStyle="absolute top-[24%] -left-[5rem]"
+                    containerStyle="absolute top-[14%] -left-[7.3rem]"
                     icon={<BusinessbagIcon/>} 
-                    endCountNum={3} 
+                    endCountNum={4} 
                     BadgeText="Years Of Experience"
                   />
                   <Badge 
@@ -54,8 +54,8 @@ export default function Home() {
                     endCountNum={2} 
                     BadgeText="Happy Clients"
                   />
-                  <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark bg-no-repeat w-[400px] h-[400px] absolute -top-1 -right-2'></div>
-                   <div className="bg-hero_shape w-[410px] h-[362px] bg-no-repeat relative bg-bottom" >
+                  <div className=' w-[400px] h-[400px] absolute -top-1 -right-2'></div>
+                   <div className="w-[410px] h-[362px] bg-no-repeat relative bg-bottom" >
                      <Image src={DevImg} fill priority alt="Kamal IDOUFKIR Profile Image" draggable="false" />
                    </div>
               
@@ -68,7 +68,7 @@ export default function Home() {
                   <TypewriterAnimation /> Software!
                 </span>
               </AnimatedText>
-                    <p className='my-4 text-base font-medium z-10'>
+                    <p className='my-4 text-base font-medium z-10 '>
                     As a skilled software engineer who enjoys creating helpful, user-friendly, clean and easy-to-use software, I love turning ideas into working applications that solve real problems. Explore my work to see how I can help bring your ideas to life.
                     </p>
                     <div className='flex items-center self-start mt-2 '>

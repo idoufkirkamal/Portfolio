@@ -7,7 +7,7 @@ import AnimatedText from './AnimatedText';
 const Details = ({ position, company, companyLink, time, address, work }) => {
     const ref = useRef(null);
     return (
-        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[90%] mx-auto flex flex-col items-center justify-between'>
+        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[90%] mx-auto flex flex-col items-start justify-between'>
            <LiIcon reference={ref} />
             <motion.div
             initial={{ y: 50 }}
@@ -15,10 +15,10 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             transition={{ duration: 0.5, type: "spring" }}
             className='ml-20'
             >
-                <h3 className='capitalize font-bold text-2xl text-dark'>
+                <h3 className='font-bold text-2xl text-dark'>
                     {position}&nbsp;<a href={companyLink} target="_blank" className='text-primary capitalize'>@{company}</a>
                 </h3>
-                <span className='capitalize font-medium text-dark/75'>
+                <span className='font-medium text-dark/75'>
                     {time} | {address}
                 </span>
                 <p className='font-medium w-full'>
@@ -38,20 +38,20 @@ const Experience = () => {
 
     const experienceData = [
         {
-            position: "Software Engineer",
-            company: "Google",
-            companyLink: "https://www.google.com",
-            time: "2022-Present",
-            address: "Mountain View, CA",
-            work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            position: "Stage d'Initiation",
+            company: "WEB3 Marketing",
+            companyLink: "",
+            time: "01 July 2022 - 01 August 2022",
+            address: "Agadir, Morocco",
+            work: "Developed a basic e-commerce mobile application using Java, which includes essential features such as product browsing, a shopping cart, user authentication. Offering a user-friendly interface and seamless experience."
         },
         {
-            position: "Software Engineer",
-            company: "Google",
-            companyLink: "https://www.google.com",
-            time: "2022-Present",
-            address: "Mountain View, CA",
-            work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            position: "Stage de Fin d'Etudes",
+            company: "MWC",
+            companyLink: "",
+            time: "10 April 2023 - 10 June 2023",
+            address: "Safi, Morocco",
+            work: "Development of a web application for training management within MWC, a company specialized in industrial control and technical inspection. This application enables comprehensive management of training sessions, participants, instructors, courses, chapters, and rooms. The technologies used include HTML, Bootstrap, JavaScript, MySQL, and PHP."
         },
     ];
 

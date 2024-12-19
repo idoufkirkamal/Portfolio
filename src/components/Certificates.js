@@ -4,9 +4,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from "framer-motion";
 import { CertificatesTitle } from './TitlesBackground';
 import AnimatedText from './AnimatedText';
-import Certificate1 from '../../public/images/certificates/1.jpg';
-import Certificate2 from '../../public/images/certificates/2.jpg';
-import Certificate3 from '../../public/images/certificates/3.jpg';
+import Certificate1 from '../../public/images/certificates/1.jpeg';
 
 const Card = ({ site, title, img, link }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -31,7 +29,7 @@ const Card = ({ site, title, img, link }) => {
               animate={{ y: 0, opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ type: "tween", duration: 0.3 }}
-              className="absolute -bottom-5 left-4 right-4 bg-white rounded-lg shadow-lg p-4"
+              className="absolute -bottom-5 left-4 right-4 bg-white rounded-lg shadow-lg p-4 border border-solid border-gray-500"
             >
               <span className="text-primary font-medium text-sm">{site}</span>
               <h2 className="w-full text-left text-md font-bold mt-2 mb-6">{title}</h2>
@@ -51,26 +49,14 @@ const Card = ({ site, title, img, link }) => {
 };
 
 const Certificates = () => {
-  // Certificate data stored in an array
+ 
   const certificates = [
     {
-      site: "Udemy",
-      title: "React, NodeJS, Express & MongoDB",
+      site: "Cisco",
+      title: "CCNAv7 Introduction to Networks",
       img: Certificate1,
-      link: "/"
+      link: ""
     },
-    {
-      site: "Udemy",
-      title: "MongoDB - The Complete Developer's Guide 2024",
-      img: Certificate2,
-      link: "/"
-    },
-    {
-      site: "Facebook",
-      title: "The Complete Full stack Developer's Guide",
-      img: Certificate3,
-      link: "/"
-    }
   ];
 
   return (

@@ -7,7 +7,7 @@ import AnimatedText from './AnimatedText';
 const Details = ({ type, time, place, info }) => {
     const ref = useRef(null);
     return (
-        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[90%] mx-auto flex flex-col items-center justify-between'>
+        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[90%] mx-auto flex flex-col items-start justify-between'>
            <LiIcon reference={ref}/>
             <motion.div
             initial={{y:50}}
@@ -15,10 +15,10 @@ const Details = ({ type, time, place, info }) => {
             transition={{duration:0.5, type:"spring"}}
             className='ml-20'
             >
-                <h3 className='capitalize font-bold text-2xl text-dark'>
+                <h3 className='font-bold text-2xl text-dark'>
                     {type}
                 </h3>
-                <span className='capitalize font-medium text-dark/75'>
+                <span className='font-medium text-dark/75'>
                     {time} | {place}
                 </span>
                 <p className='font-medium w-full'>
@@ -38,23 +38,23 @@ const Education = () => {
 
     const educationDetails = [
         {
-            type: "Bachelor Of Science In Computer Science",
-            time: "2016-2020",
-            place: "Massachusetts Institute Of Technology (MIT)",
-            info: "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-        },
-        {
-            type: "Master Of Science In Artificial Intelligence",
+            type: "Diplome Universitaire de Technologie en Génie Informatique",
             time: "2021-2023",
-            place: "Stanford University",
-            info: "Specialized in Machine Learning, Deep Learning, and Natural Language Processing."
+            place: "École Supérieure de Technologie Safi | Université Cadi Ayyad",
+            info: "A two-year program focused on equipping students with essential skills in computer science and information technology."
         },
         {
-            type: "PhD in Computer Science",
+            type: "Licence Parcours d'Excellence en Ingénierie logicielle",
+            time: "2023-2024",
+            place: "Faculté des Sciences Agadir | Université Ibn Zohr",
+            info: "Provides advanced knowledge and skills in software engineering, covering core subjects like software development."
+        },
+        {
+            type: "Master Parcours d'Excellence en Ingénierie logicielle",
             time: "2024-Present",
-            place: "Harvard University",
-            info: "Research focuses on Advanced AI Algorithms and Quantum Computing."
-        }
+            place: "Faculté des Sciences Agadir | Université Ibn Zohr",
+            info: "Offers a deeper and more comprehensive understanding of software engineering principles and practices."
+        },
     ];
 
     return (

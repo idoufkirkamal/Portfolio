@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
 import Image from 'next/image'
-import profilePic from '../../public/images/profile/profile2.jpg'
+import profilePic from '../../public/images/profile/Profile-img2.png'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education' 
@@ -54,7 +54,7 @@ const about = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <h1 className="text-5xl font-bold text-primary"><span className='!mr-3 !text-gray-700'>Kamal</span>IDOUFKIR</h1>
+                <h1 className="text-5xl font-extrabold text-primary"><span className='!mr-3 !text-gray-700 font-bold'>Kamal</span>IDOUFKIR</h1>
                 <p className="text-gray-600 text-lg">Software Engineer</p>
               </motion.div>
 

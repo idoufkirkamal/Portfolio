@@ -2,7 +2,6 @@
 
 Welcome to my portfolio! This project showcases my skills, projects, and experience as a Software Engineer, The website created using NextJs and Tailwind CSS. <br />
 
-🌐 **Visit the Portfolio:** [kamalidoufkir.me](https://kamalidoufkir.me)
 
 ### Images of The Portfolio Website:
 
