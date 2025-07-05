@@ -32,9 +32,9 @@ const serviceList = [
   {
     title: 'SEO Optimization',
     description: 'Improving website visibility and search engine ranking.',
-    icon: <FaChartLine className="w-8 h-8 text-yellow-500 transition-colors duration-300" />,
-    backgroundColor: 'group-hover:bg-yellow-500',
-    circleColor: 'bg-yellow-200 group-hover:bg-light',
+    icon: <FaChartLine className="w-8 h-8 text-orange-500 transition-colors duration-300" />,
+    backgroundColor: 'group-hover:bg-orange-500',
+    circleColor: 'bg-orange-200 group-hover:bg-light',
   },
   {
     title: 'Cloud Solutions',
@@ -42,13 +42,6 @@ const serviceList = [
     icon: <FaCloud className="w-8 h-8 text-green-500 transition-colors duration-300" />,
     backgroundColor: 'group-hover:bg-green-500',
     circleColor: 'bg-green-200 group-hover:bg-light',
-  },
-  {
-    title: 'Data Analysis',
-    description: 'Providing data insights and analytics solutions.',
-    icon: <FaDatabase className="w-8 h-8 text-red-500 transition-colors duration-300" />,
-    backgroundColor: 'group-hover:bg-red-500',
-    circleColor: 'bg-red-200 group-hover:bg-light',
   },
   {
     title: 'E-commerce Solutions',
@@ -60,9 +53,9 @@ const serviceList = [
   {
     title: 'Database Management',
     description: 'Ensuring robust and efficient database solutions.',
-    icon: <FaServer className="w-8 h-8 text-orange-500 transition-colors duration-300" />,
-    backgroundColor: 'group-hover:bg-orange-500',
-    circleColor: 'bg-orange-200 group-hover:bg-light',
+    icon: <FaServer className="w-8 h-8 text-red-500 transition-colors duration-300" />,
+    backgroundColor: 'group-hover:bg-red-500',
+    circleColor: 'bg-red-200 group-hover:bg-light',
   },
 ]
 

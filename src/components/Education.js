@@ -44,13 +44,13 @@ const Education = () => {
             info: "A two-year program focused on equipping students with essential skills in computer science and information technology."
         },
         {
-            type: "Licence Parcours d'Excellence en Ingénierie logicielle",
+            type: "Licence d'Excellence en Ingénierie logicielle",
             time: "2023-2024",
             place: "Faculté des Sciences Agadir | Université Ibn Zohr",
             info: "Provides advanced knowledge and skills in software engineering, covering core subjects like software development."
         },
         {
-            type: "Master Parcours d'Excellence en Ingénierie logicielle",
+            type: "Master d'Excellence en Ingénierie logicielle",
             time: "2024-Present",
             place: "Faculté des Sciences Agadir | Université Ibn Zohr",
             info: "Offers a deeper and more comprehensive understanding of software engineering principles and practices."
