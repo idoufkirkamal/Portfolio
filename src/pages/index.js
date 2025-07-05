@@ -10,7 +10,7 @@ import HireMe from '@/components/HireMe'
 import TransitionEffect from '@/components/TransitionEffect'
 import ParticlesContainer from '@/components/ParticlesContainer'
 import TypewriterAnimation from '@/components/TypewriterAnimation'
-import DevImg from '../../public/images/profile/Profile-Img1.png'
+import DevImg from '../../public/images/profile/Profile-img1.png'
 import Badge from '@/components/Badge'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -51,7 +51,7 @@ export default function Home() {
                   <Badge 
                     containerStyle="absolute top-[55%] -right-8"
                     icon={<ClientsIcon/>} 
-                    endCountNum={2} 
+                    endCountNum={5} 
                     BadgeText="Happy Clients"
                   />
                   <div className=' w-[400px] h-[400px] absolute -top-1 -right-2'></div>
