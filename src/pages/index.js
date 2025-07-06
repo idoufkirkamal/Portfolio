@@ -5,7 +5,7 @@ import Layout from '@/components/Layout'
 import dynamic from 'next/dynamic';
 const AnimatedText = dynamic(() => import('@/components/AnimatedText'), { ssr: false });
 import Link from 'next/link'
-import { DownloadIcon, BusinessbagIcon, ClientsIcon, ProjectsIcon  } from '@/components/Icons'
+import { DownloadIcon, BusinessbagIcon, TeamProjectsIcon, ProjectsIcon  } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
 import TransitionEffect from '@/components/TransitionEffect'
 import ParticlesContainer from '@/components/ParticlesContainer'
@@ -38,7 +38,7 @@ export default function Home() {
                   <Badge 
                     containerStyle="absolute top-[14%] -left-[7.3rem]"
                     icon={<BusinessbagIcon/>} 
-                    endCountNum={4} 
+                    endCountNum={1} 
                     BadgeText="Years Of Experience"
                   />
                   <Badge 
@@ -50,9 +50,9 @@ export default function Home() {
                   />
                   <Badge 
                     containerStyle="absolute top-[55%] -right-8"
-                    icon={<ClientsIcon/>} 
-                    endCountNum={5} 
-                    BadgeText="Happy Clients"
+                    icon={<TeamProjectsIcon/>} 
+                    endCountNum={3} 
+                    BadgeText="Team Projects"
                   />
                   <div className=' w-[400px] h-[400px] absolute -top-1 -right-2'></div>
                    <div className="w-[410px] h-[362px] bg-no-repeat relative bg-bottom" >

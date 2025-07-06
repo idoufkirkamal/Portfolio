@@ -11,7 +11,7 @@ import Certificate4 from '../../public/images/certificates/4.png';
 import Certificate5 from '../../public/images/certificates/5.png';
 import Certificate6 from '../../public/images/certificates/6.png';
 import Certificate7 from '../../public/images/certificates/7.png';
-// import Certificate8 from '../../public/images/certificates/8.png';
+import Certificate8 from '../../public/images/certificates/8.png';
 
 const Card = ({ site, title, img, link, onImageClick }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -117,17 +117,17 @@ const Certificates = () => {
  
   const certificates = [
     {
-      site: "JetBrains",
-      date: "Jul 2025",
-      title: "Java Foundations Professional Certificate by JetBrains",
-      img: Certificate1,
-      link: ""
-    },{
       site: "Atlassian",
       date: "Jun 2025",
       title: "Atlassian Agile Project Management Professional Certificate",
-      img: Certificate7,
+      img: Certificate8,
       link: "https://www.linkedin.com/learning/certificates/3ba395a980858b0aec992ff552b0922cc049af7f48986e60c77faad1ebcf5c5e"
+    },{
+      site: "JetBrains",
+      date: "Jul 2025",
+      title: "Java Foundations Professional Certificate by JetBrains",
+      img: Certificate7,
+      link: "https://www.linkedin.com/learning/certificates/92fce7214e49fed5c011de807acb0d1952fe92540ec34d585de17c5eb72ee7cc"
     },{
       site: "GitHub",
       date: "Jun 2025",
