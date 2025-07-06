@@ -55,7 +55,7 @@ const about = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <h1 className="text-5xl font-extrabold text-primary"><span className='!mr-3 !text-gray-700 font-bold'>Kamal</span>IDOUFKIR</h1>
-                <p className="text-gray-600 text-lg">Software Engineer</p>
+                <p className="text-gray-600 text-lg">Software Engineer | React, Next.js, Node.js, Spring Boot, Laravel, Tailwind CSS</p>
               </motion.div>
 
               {/* Horizontal line */}
@@ -68,12 +68,12 @@ const about = () => {
 
               {/* Profile Picture and Bio */}
               <motion.div
-                className="flex justify-between items-center"
+                className="flex items-center mb-8"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
               >
-                <div className="relative flex-shrink-0">
+                <div className="relative flex-shrink-0 mr-9">
                   <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
@@ -95,7 +95,7 @@ const about = () => {
                   </div>
                 </div>
                 <motion.div
-                  className="mt-4 ml-9"
+                  className="flex-1"
                   initial={{ opacity: 0, x: 50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.8 }}
@@ -107,6 +107,50 @@ const about = () => {
                     Whether I&#39;m working on a website, mobile app, or other digital product, I bring my commitment to creating user-friendly, powerful, and clear solutions to every project. I look forward to the opportunity to bring my skills and passion to your next project.
                   </p>
                 </motion.div>
+              </motion.div>
+
+              {/* Proficient in Section - Separate Container */}
+              <motion.div
+                className="mt-6 ml-52"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 1 }}
+              >
+                <h3 className="text-xl font-semibold text-primary mb-4">Proficient in:</h3>
+                <ul className="list-disc list-inside space-y-2 text-gray-700">
+                  <li className="flex">
+                    <span className="font-bold mr-2">Frontend:</span>
+                    <span>React, Next.js, Tailwind CSS, TypeScript, Axios</span>
+                  </li>
+                  <li className="flex">
+                    <span className="font-bold mr-2 flex-shrink-0">Backend:</span>
+                    <span>Node.js, Express.js, Prisma ORM, Spring Boot (Java), Hibernate (Spring Data JPA), Laravel (PHP), Eloquent ORM</span>
+                  </li>
+                  <li className="flex">
+                    <span className="font-bold mr-2">Database:</span>
+                    <span>MySQL, PostgreSQL</span>
+                  </li>
+                  <li className="flex">
+                    <span className="font-bold mr-2 flex-shrink-0">Auth & Security:</span>
+                    <span>JWT, bcrypt, Helmet.js, Laravel Sanctum</span>
+                  </li>
+                  <li className="flex">
+                    <span className="font-bold mr-2">DevOps:</span>
+                    <span>Docker, GitHub Actions, Railway, Vercel, Kubernetes</span>
+                  </li>
+                  <li className="flex">
+                    <span className="font-bold mr-2">Testing:</span>
+                    <span>Jest, Playwright, React Testing Library, JUnit, PHPUnit</span>
+                  </li>
+                  <li className="flex">
+                    <span className="font-bold mr-2 flex-shrink-0">API Tools:</span>
+                    <span>Postman, Thunder Client</span>
+                  </li>
+                  <li className="flex">
+                    <span className="font-bold mr-2 flex-shrink-0">Cloud Providers:</span>
+                    <span>AWS, Azure</span>
+                  </li>
+                </ul>
               </motion.div>
             </motion.div>
           <Skills />
