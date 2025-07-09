@@ -120,11 +120,11 @@ const about = () => {
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
                   <li className="flex">
                     <span className="font-bold mr-2">Frontend:</span>
-                    <span>React, Next.js, Tailwind CSS, TypeScript, Axios</span>
+                    <span>React, Next.js, Tailwind CSS, TypeScript</span>
                   </li>
                   <li className="flex">
                     <span className="font-bold mr-2 flex-shrink-0">Backend:</span>
-                    <span>Node.js, Express.js, Prisma ORM, Spring Boot (Java), Hibernate (Spring Data JPA), Laravel (PHP), Eloquent ORM</span>
+                    <span>Node.js, Express.js, Prisma ORM, Spring Boot, Hibernate (Spring Data JPA), Laravel, Eloquent ORM</span>
                   </li>
                   <li className="flex">
                     <span className="font-bold mr-2">Database:</span>

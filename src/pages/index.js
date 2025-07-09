@@ -39,13 +39,13 @@ export default function Home() {
                     containerStyle="absolute top-[14%] -left-[7.3rem]"
                     icon={<BusinessbagIcon/>} 
                     endCountNum={1} 
+                    endCountText='+'
                     BadgeText="Years Of Experience"
                   />
                   <Badge 
                     containerStyle="absolute top-[80%] -left-[1rem]"
                     icon={<ProjectsIcon/>} 
                     endCountNum={4} 
-                    // endCountText='k'
                     BadgeText="Finished Projects"
                   />
                   <Badge 
