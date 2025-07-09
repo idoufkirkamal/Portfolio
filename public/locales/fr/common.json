@@ -1,0 +1,177 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "services": "Services",
+    "contact": "Contact",
+    "language": "Langue"
+  },
+  "home": {
+    "title": "Kamal IDOUFKIR - Ingénieur Logiciel",
+    "description": "Bienvenue sur le portfolio de Kamal IDOUFKIR, un ingénieur logiciel passionné du Maroc. Actuellement en master d'ingénierie logicielle, Kamal se consacre à la création de solutions logicielles innovantes et conviviales qui ont un impact réel.",
+    "keywords": "Kamal IDOUFKIR, Ingénieur Logiciel Maroc, développement logiciel, portfolio ingénieur logiciel, solutions logicielles innovantes, applications conviviales, master ingénierie logicielle, solutions logicielles Maroc",
+    "turningIdeas": "Transformer les idées en",
+    "software": "Logiciels !",
+    "description_text": "En tant qu'ingénieur logiciel qualifié qui aime créer des logiciels utiles, conviviaux, propres et faciles à utiliser, j'adore transformer les idées en applications fonctionnelles qui résolvent de vrais problèmes. Explorez mon travail pour voir comment je peux vous aider à donner vie à vos idées.",
+    "downloadCV": "Télécharger CV",
+    "yearsExperience": "Années d'expérience",
+    "finishedProjects": "Projets terminés",
+    "teamProjects": "Projets d'équipe",
+    "hireMe": "Embauchez-moi"
+  },
+  "about": {
+    "title": "Kamal IDOUFKIR | À propos",
+    "description": "Découvrez Kamal IDOUFKIR, un ingénieur logiciel dévoué du Maroc avec une expertise en développement logiciel et un engagement envers l'innovation, la qualité et la conception centrée sur l'utilisateur.",
+    "keywords": "Kamal IDOUFKIR, à propos de Kamal IDOUFKIR, ingénieur logiciel, développement logiciel, développement web, développement mobile, Maroc, solutions innovantes",
+    "aboutMe": "À propos de moi",
+    "position": "Ingénieur Logiciel | React, Next.js, Node.js, Spring Boot, Laravel, Tailwind CSS",
+    "intro": "Salut, je suis Kamal, un ingénieur logiciel du Maroc et actuellement en master d'ingénierie logicielle. Mon travail se concentre sur un design clair, du code propre et une résolution réfléchie des problèmes. J'explore toujours de nouveaux outils et technologies pour garder mon travail frais et efficace. Chaque projet que j'entreprends est une opportunité d'apprendre, de m'améliorer et d'avoir un impact.",
+    "commitment": "Que je travaille sur un site web, une application mobile ou un autre produit numérique, j'apporte mon engagement à créer des solutions conviviales, puissantes et claires à chaque projet. J'ai hâte d'avoir l'opportunité d'apporter mes compétences et ma passion à votre prochain projet.",
+    "proficientIn": "Compétent en :",
+    "frontend": "Frontend :",
+    "frontendTech": "React, Next.js, Tailwind CSS, TypeScript",
+    "backend": "Backend :",
+    "backendTech": "Node.js, Express.js, Prisma ORM, Spring Boot, Hibernate (Spring Data JPA), Laravel, Eloquent ORM",
+    "database": "Base de données :",
+    "databaseTech": "MySQL, PostgreSQL",
+    "authSecurity": "Auth et Sécurité :",
+    "authSecurityTech": "JWT, bcrypt, Helmet.js, Laravel Sanctum",
+    "devops": "DevOps :",
+    "devopsTech": "Docker, GitHub Actions, Railway, Vercel, Kubernetes",
+    "testing": "Tests :",
+    "testingTech": "Jest, Playwright, React Testing Library, JUnit, PHPUnit",
+    "apiTools": "Outils API :",
+    "apiToolsTech": "Postman, Thunder Client",
+    "cloudProviders": "Fournisseurs Cloud :",
+    "cloudProvidersTech": "AWS, Azure"
+  },
+  "projects": {
+    "title": "Kamal IDOUFKIR | Projets",
+    "description": "Explorez les projets innovants de Kamal IDOUFKIR, démontrant son expertise en développement full-stack, technologies web modernes et solutions de conception centrées sur l'utilisateur.",
+    "keywords": "projets Kamal IDOUFKIR, projets développement logiciel, applications web, projets portfolio, projets React, projets Node.js",
+    "myProjects": "Mes Projets",
+    "visitProject": "Visiter le Projet",
+    "github": "GitHub",
+    "filters": {
+      "all": "Tous",
+      "webProject": "Projet Web",
+      "mobileApp": "Application Mobile",
+      "design": "Design"
+    },
+    "projectData": {
+      "thisPortfolio": {
+        "title": "Ce Portfolio",
+        "summary": "Un site web de portfolio moderne et réactif construit avec Next.js et Tailwind CSS, avec un design épuré, des animations fluides et des composants interactifs."
+      },
+      "mediFlow": {
+        "title": "MediFlow",
+        "summary": "Un système complet de gestion de rendez-vous médicaux construit avec Jakarta EE et Hibernate ORM, avec un design d'interface moderne et une gestion efficace des données pour les professionnels de la santé."
+      },
+      "examManager": {
+        "title": "ExamManager",
+        "summary": "ExamManager est une application complète de gestion d'examens qui permet aux enseignants de saisir et modifier les notes des étudiants tout en permettant aux étudiants de consulter leurs résultats et de gérer les réclamations de notes."
+      },
+      "volMaghreb": {
+        "title": "Volmaghreb",
+        "summary": "VolMaghreb est une plateforme conviviale de réservation de vols qui propose un design moderne et épuré et permet une gestion efficace des réservations de vols pour les clients et les administrateurs."
+      }
+    }
+  },
+  "services": {
+    "title": "Kamal IDOUFKIR | Services",
+    "description": "Découvrez les services informatiques professionnels offerts par Kamal IDOUFKIR, incluant le développement web, le développement d'applications mobiles, le design UI/UX, l'optimisation SEO, les solutions cloud, et plus encore. Chaque service est conçu avec une expertise dans les technologies modernes comme React, Tailwind CSS, et plus.",
+    "keywords": "Kamal IDOUFKIR, services informatiques, développement web, développement applications mobiles, design UI/UX, optimisation SEO, solutions cloud, analyse de données, solutions e-commerce, gestion base de données, professionnel informatique Maroc",
+    "myServices": "Mes Services",
+    "my": "Mes",
+    "webDevelopmentTitle": "Développement Web",
+    "webDevelopmentDescription": "Services de développement web de haute qualité et responsifs.",
+    "uiUxDesignTitle": "Design UI/UX",
+    "uiUxDesignDescription": "Création d'expériences utilisateur intuitives et engageantes.",
+    "mobileAppDevelopmentTitle": "Développement d'Applications Mobiles",
+    "mobileAppDevelopmentDescription": "Création d'applications mobiles pour les plateformes Android et iOS.",
+    "seoOptimizationTitle": "Optimisation SEO",
+    "seoOptimizationDescription": "Amélioration de la visibilité du site web et du classement dans les moteurs de recherche.",
+    "cloudSolutionsTitle": "Solutions Cloud",
+    "cloudSolutionsDescription": "Implémentation d'infrastructure et de services cloud.",
+    "ecommerceSolutionsTitle": "Solutions E-commerce",
+    "ecommerceSolutionsDescription": "Développement et gestion de plateformes e-commerce.",
+    "databaseManagementTitle": "Gestion de Base de Données",
+    "databaseManagementDescription": "Assurance de solutions de base de données robustes et efficaces."
+  },
+  "contact": {
+    "title": "Kamal IDOUFKIR | Contact",
+    "description": "Contactez Kamal IDOUFKIR pour des projets de développement logiciel, collaborations ou demandes professionnelles.",
+    "keywords": "contacter Kamal IDOUFKIR, embaucher ingénieur logiciel, contact développement logiciel, collaboration",
+    "contactMe": "Contactez-moi",
+    "contact": "Contact",
+    "me": "Moi",
+    "letsBringIdeasToLife": "Donnons Vie à Vos Idées !",
+    "formDescription": "Si vous avez des suggestions ou un projet en tête, veuillez remplir le formulaire, et je vous répondrai bientôt !",
+    "contactInfo": {
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Localisation",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "form": {
+      "yourName": "Votre Nom",
+      "yourEmail": "Votre Email",
+      "yourSubject": "Votre Sujet",
+      "yourMessage": "Votre Message",
+      "sendMessage": "Envoyer le Message",
+      "thankYouMessage": "Merci ! Votre message a été envoyé."
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "mySkills": "Mes Compétences",
+    "my": "Mes",
+    "description": "Mes compétences techniques et outils"
+  },
+  "experience": {
+    "title": "Expérience",
+    "myExperience": "Mon Expérience",
+    "description": "Parcours professionnel",
+    "internshipTitle": "Stage d'Initiation",
+    "finalStudiesInternship": "Stage de Fin d'Études",
+    "web3Marketing": "WEB3 Marketing",
+    "mwc": "MWC",
+    "web3Time": "01 Juillet 2022 - 01 Août 2022",
+    "web3Location": "Agadir, Maroc",
+    "mwcTime": "10 Avril 2023 - 10 Juin 2023",
+    "mwcLocation": "Safi, Maroc",
+    "web3Description": "Développement d'une application mobile e-commerce basique utilisant Java, qui inclut des fonctionnalités essentielles telles que la navigation des produits, un panier d'achat, l'authentification des utilisateurs. Offrant une interface conviviale et une expérience fluide.",
+    "mwcDescription": "Développement d'une application web pour la gestion de formation au sein de MWC, une entreprise spécialisée dans le contrôle industriel et l'inspection technique. Cette application permet une gestion complète des sessions de formation, participants, instructeurs, cours, chapitres et salles. Les technologies utilisées incluent HTML, Bootstrap, JavaScript, MySQL et PHP."
+  },
+  "education": {
+    "title": "Éducation",
+    "myEducation": "Mon Éducation",
+    "description": "Formation académique",
+    "dut": "Diplôme Universitaire de Technologie en Génie Informatique",
+    "dutTime": "2021-2023",
+    "dutInfo": "Un programme de deux ans axé sur l'acquisition de compétences essentielles en informatique et technologie de l'information.",
+    "licence": "Licence d'Excellence en Ingénierie logicielle",
+    "licenceTime": "2023-2024",
+    "licenceInfo": "Fournit des connaissances et compétences avancées en ingénierie logicielle, couvrant les matières principales comme le développement logiciel.",
+    "master": "Master d'Excellence en Ingénierie logicielle",
+    "masterTime": "2024-Présent",
+    "masterInfo": "Offre une compréhension plus profonde et complète des principes et pratiques de l'ingénierie logicielle.",
+    "estSafi": "École Supérieure de Technologie Safi | Université Cadi Ayyad",
+    "fssAgadir": "Faculté des Sciences Agadir | Université Ibn Zohr"
+  },
+  "certificates": {
+    "title": "Certificats",
+    "my": "Mes",
+    "myCertificates": "Mes Certificats",
+    "description": "Certifications professionnelles",
+    "viewCertificate": "Voir le certificat"
+  },
+  "footer": {
+    "builtWith": "Construit avec",
+    "and": "et",
+    "by": "par",
+    "allRightsReserved": "Tous droits réservés."
+  }
+}

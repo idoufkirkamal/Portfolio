@@ -1,0 +1,177 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Kamal IDOUFKIR - Software Engineer",
+    "description": "Welcome to the portfolio of Kamal IDOUFKIR, a passionate Software Engineer from Morocco. Currently pursuing a Master's degree in Software Engineering, Kamal is dedicated to creating innovative, user-friendly software solutions that make a real impact.",
+    "keywords": "Kamal IDOUFKIR, Software Engineer Morocco, software development, software engineer portfolio, innovative software solutions, user-friendly applications, software engineering master's degree, software solutions Morocco",
+    "turningIdeas": "Turning Ideas into",
+    "software": "Software!",
+    "description_text": "As a skilled software engineer who enjoys creating helpful, user-friendly, clean and easy-to-use software, I love turning ideas into working applications that solve real problems. Explore my work to see how I can help bring your ideas to life.",
+    "downloadCV": "Download CV",
+    "yearsExperience": "Years Of Experience",
+    "finishedProjects": "Finished Projects",
+    "teamProjects": "Team Projects",
+    "hireMe": "Hire Me"
+  },
+  "about": {
+    "title": "Kamal IDOUFKIR | About",
+    "description": "Learn about Kamal IDOUFKIR, a dedicated Software Engineer from Morocco with expertise in software development and a commitment to innovation, quality, and user-centered design.",
+    "keywords": "Kamal IDOUFKIR, about Kamal IDOUFKIR, software engineer, software development, web development, mobile development, Morocco, innovative solutions",
+    "aboutMe": "About Me",
+    "position": "Software Engineer | React, Next.js, Node.js, Spring Boot, Laravel, Tailwind CSS",
+    "intro": "Hi, I'm Kamal, a Software Engineer from Morocco and currently pursuing a Master's degree in Software Engineering. My work centers on clear design, clean code, and thoughtful problem-solving. I'm always exploring new tools and technologies to keep my work fresh and effective. Every project I take on is an opportunity to learn, improve, and make an impact.",
+    "commitment": "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to creating user-friendly, powerful, and clear solutions to every project. I look forward to the opportunity to bring my skills and passion to your next project.",
+    "proficientIn": "Proficient in:",
+    "frontend": "Frontend:",
+    "frontendTech": "React, Next.js, Tailwind CSS, TypeScript",
+    "backend": "Backend:",
+    "backendTech": "Node.js, Express.js, Prisma ORM, Spring Boot, Hibernate (Spring Data JPA), Laravel, Eloquent ORM",
+    "database": "Database:",
+    "databaseTech": "MySQL, PostgreSQL",
+    "authSecurity": "Auth & Security:",
+    "authSecurityTech": "JWT, bcrypt, Helmet.js, Laravel Sanctum",
+    "devops": "DevOps:",
+    "devopsTech": "Docker, GitHub Actions, Railway, Vercel, Kubernetes",
+    "testing": "Testing:",
+    "testingTech": "Jest, Playwright, React Testing Library, JUnit, PHPUnit",
+    "apiTools": "API Tools:",
+    "apiToolsTech": "Postman, Thunder Client",
+    "cloudProviders": "Cloud Providers:",
+    "cloudProvidersTech": "AWS, Azure"
+  },
+  "projects": {
+    "title": "Kamal IDOUFKIR | Projects",
+    "description": "Explore the innovative projects by Kamal IDOUFKIR, showcasing expertise in full-stack development, modern web technologies, and user-centered design solutions.",
+    "keywords": "Kamal IDOUFKIR projects, software development projects, web applications, portfolio projects, React projects, Node.js projects",
+    "myProjects": "My Projects",
+    "visitProject": "Visit Project",
+    "github": "GitHub",
+    "filters": {
+      "all": "All",
+      "webProject": "Web Project",
+      "mobileApp": "Mobile App",
+      "design": "Design"
+    },
+    "projectData": {
+      "thisPortfolio": {
+        "title": "This Portfolio",
+        "summary": "A modern and responsive portfolio website built with Next.js and Tailwind CSS, featuring clean design, smooth animations and interactive components."
+      },
+      "mediFlow": {
+        "title": "MediFlow",
+        "summary": "A comprehensive medical appointment management system built with Jakarta EE and Hibernate ORM, featuring modern UI design and efficient data management for healthcare professionals."
+      },
+      "examManager": {
+        "title": "ExamManager",
+        "summary": "ExamManager is a comprehensive exam management application that allows teachers to input and modify student grades while enabling students to view their results, and manage grade complaints."
+      },
+      "volMaghreb": {
+        "title": "Volmaghreb",
+        "summary": "VolMaghreb is a user-friendly flight reservation platform that features a clean, modern design and enables efficient management of flight bookings for both customers and administrators."
+      }
+    }
+  },
+  "services": {
+    "title": "Kamal IDOUFKIR | Services",
+    "description": "Discover the professional IT services offered by Kamal IDOUFKIR, including web development, mobile app development, UI/UX design, SEO optimization, cloud solutions, and more. Each service is crafted with expertise in modern technologies like React, Tailwind CSS, and more.",
+    "keywords": "Kamal IDOUFKIR, IT services, web development, mobile app development, UI/UX design, SEO optimization, cloud solutions, data analysis, e-commerce solutions, database management, Morocco IT professional",
+    "myServices": "My Services",
+    "my": "My",
+    "webDevelopmentTitle": "Web Development",
+    "webDevelopmentDescription": "High-quality and responsive web development services.",
+    "uiUxDesignTitle": "UI/UX Design",
+    "uiUxDesignDescription": "Crafting intuitive and engaging user experiences.",
+    "mobileAppDevelopmentTitle": "Mobile App Development",
+    "mobileAppDevelopmentDescription": "Creating mobile applications for Android and iOS platforms.",
+    "seoOptimizationTitle": "SEO Optimization",
+    "seoOptimizationDescription": "Improving website visibility and search engine ranking.",
+    "cloudSolutionsTitle": "Cloud Solutions",
+    "cloudSolutionsDescription": "Implementing cloud infrastructure and services.",
+    "ecommerceSolutionsTitle": "E-commerce Solutions",
+    "ecommerceSolutionsDescription": "Developing and managing e-commerce platforms.",
+    "databaseManagementTitle": "Database Management",
+    "databaseManagementDescription": "Ensuring robust and efficient database solutions."
+  },
+  "contact": {
+    "title": "Kamal IDOUFKIR | Contact",
+    "description": "Get in touch with Kamal IDOUFKIR for software development projects, collaborations, or professional inquiries.",
+    "keywords": "contact Kamal IDOUFKIR, hire software engineer, software development contact, collaboration",
+    "contactMe": "Contact Me",
+    "contact": "Contact",
+    "me": "Me",
+    "letsBringIdeasToLife": "Let's Bring Your Ideas to Life!",
+    "formDescription": "If you have any suggestions or a project in mind, please fill out the form, and I will get back to you soon!",
+    "contactInfo": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    },
+    "form": {
+      "yourName": "Your Name",
+      "yourEmail": "Your Email",
+      "yourSubject": "Your Subject",
+      "yourMessage": "Your Message",
+      "sendMessage": "Send Message",
+      "thankYouMessage": "Thank you! Your message has been sent."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "mySkills": "My Skills",
+    "my": "My",
+    "description": "My Technical Skills & Tools"
+  },
+  "experience": {
+    "title": "Experience",
+    "myExperience": "My Experience",
+    "description": "Professional Journey",
+    "internshipTitle": "Internship",
+    "finalStudiesInternship": "Final Studies Internship",
+    "web3Marketing": "WEB3 Marketing",
+    "mwc": "MWC",
+    "web3Time": "01 July 2022 - 01 August 2022",
+    "web3Location": "Agadir, Morocco",
+    "mwcTime": "10 April 2023 - 10 June 2023",
+    "mwcLocation": "Safi, Morocco",
+    "web3Description": "Developed a basic e-commerce mobile application using Java, which includes essential features such as product browsing, a shopping cart, user authentication. Offering a user-friendly interface and seamless experience.",
+    "mwcDescription": "Development of a web application for training management within MWC, a company specialized in industrial control and technical inspection. This application enables comprehensive management of training sessions, participants, instructors, courses, chapters, and rooms. The technologies used include HTML, Bootstrap, JavaScript, MySQL, and PHP."
+  },
+  "education": {
+    "title": "Education",
+    "myEducation": "My Education",
+    "description": "Academic Background",
+    "dut": "University Diploma of Technology in Computer Engineering",
+    "dutTime": "2021-2023",
+    "dutInfo": "A two-year program focused on equipping students with essential skills in computer science and information technology.",
+    "licence": "Bachelor of Excellence in Software Engineering",
+    "licenceTime": "2023-2024",
+    "licenceInfo": "Provides advanced knowledge and skills in software engineering, covering core subjects like software development.",
+    "master": "Master of Excellence in Software Engineering",
+    "masterTime": "2024-Present",
+    "masterInfo": "Offers a deeper and more comprehensive understanding of software engineering principles and practices.",
+    "estSafi": "Higher School of Technology Safi | Cadi Ayyad University",
+    "fssAgadir": "Faculty of Sciences Agadir | Ibn Zohr University"
+  },
+  "certificates": {
+    "title": "Certificates",
+    "my": "My",
+    "myCertificates": "My Certificates",
+    "description": "Professional Certifications",
+    "viewCertificate": "View Certificate"
+  },
+  "footer": {
+    "builtWith": "Built with",
+    "and": "and",
+    "by": "by",
+    "allRightsReserved": "All rights reserved."
+  }
+}

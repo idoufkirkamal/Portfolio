@@ -8,6 +8,8 @@ import { GithubIcon } from '@/components/Icons/';
 import TransitionEffect from '@/components/TransitionEffect';
 import { motion, AnimatePresence } from "framer-motion";
 import { ProjectsTitle } from "@/components/TitlesBackground";
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 // Utility function to generate project images dynamically
 const getProjectImages = (projectNumber, imageCount) => {
@@ -19,6 +21,7 @@ const getProjectImages = (projectNumber, imageCount) => {
 const ProjectCard = ({ title, summary, img, images, githubLink, techs, link }) => {
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const { t } = useTranslation('common');
 
   return (
     <>
@@ -53,7 +56,7 @@ const ProjectCard = ({ title, summary, img, images, githubLink, techs, link }) =
           <div className="mt-4 flex items-center space-x-4">
             {link && (
               <Link href={link} target="_blank" className="rounded-lg bg-dark text-light py-2 px-4 text-sm font-semibold hover:bg-primary transition-colors">
-                Visit Project
+                {t('projects.visitProject') || 'Visit Project'}
               </Link>
             )}
             {githubLink && (
@@ -163,65 +166,68 @@ const ProjectCard = ({ title, summary, img, images, githubLink, techs, link }) =
 };
 
 
-const projectsData = [
-  { 
-    type: "Web Project", 
-    title: "This Portfolio", 
-    summary: "A modern and responsive portfolio website built with Next.js and Tailwind CSS, featuring clean design, smooth animations and interactive components.", 
-    img: getProjectImages(1, 1)[0], 
-    images: null, // No multiple images for portfolio project
-    githubLink: "https://github.com/idoufkirkamal/Portfolio", 
-    techs: ["Next.js", "Tailwind CSS", "Framer Motion"]
-  },
-  { 
-    type: "Web Project", 
-    title: "MediFlow", 
-    summary: "A comprehensive medical appointment management system built with Jakarta EE and Hibernate ORM, featuring modern UI design and efficient data management for healthcare professionals.", 
-    img: getProjectImages(2, 7)[2], 
-    images: getProjectImages(2, 7),
-    githubLink: "https://github.com/idoufkirkamal/MediFlow",
-    techs: ["Jakarta EE", "Hibernate ORM", "Tailwind CSS", "MYSQL"]
-  },
-  { 
-    type: "Web Project", 
-    title: "ExamManager", 
-    summary: "ExamManager is a comprehensive exam management application that allows teachers to input and modify student grades while enabling students to view their results, and manage grade complaints.", 
-    img: getProjectImages(3, 9)[4], 
-    images: getProjectImages(3, 9),
-    githubLink: "https://github.com/idoufkirkamal/ExamManager",
-    techs: ["CodeIgniter", "Tailwind CSS", "MySQL"]
-  },
-  { 
-    type: "Web Project", 
-    title: "Volmaghreb", 
-    summary: "VolMaghreb is a user-friendly flight reservation platform that features a clean, modern design and enables efficient management of flight bookings for both customers and administrators.", 
-    img: getProjectImages(4, 13)[2], 
-    images: getProjectImages(4, 13),
-    link: "https://volmaghreb.onrender.com/volmaghreb", 
-    githubLink: "https://github.com/idoufkirkamal/volmaghreb",
-    techs: ["Spring Boot", "Spring Security", "Spring Data JPA", "Thymeleaf", "Bootstrap", "MySQL"]
-  }
-];
-
 const Projects = () => {
+  const { t } = useTranslation('common');
   const [filter, setFilter] = useState("All");
+
+  // Project data with direct translation calls
+  const projectsData = [
+    { 
+      type: "Web Project", 
+      title: t('projects.projectData.thisPortfolio.title') || 'This Portfolio', 
+      summary: t('projects.projectData.thisPortfolio.summary') || 'A modern and responsive portfolio website built with Next.js and Tailwind CSS, featuring clean design, smooth animations and interactive components.', 
+      img: getProjectImages(1, 1)[0], 
+      images: null,
+      githubLink: "https://github.com/idoufkirkamal/Portfolio", 
+      techs: ["Next.js", "Tailwind CSS", "Framer Motion"]
+    },
+    { 
+      type: "Web Project", 
+      title: t('projects.projectData.mediFlow.title') || 'MediFlow', 
+      summary: t('projects.projectData.mediFlow.summary') || 'A comprehensive medical appointment management system built with Jakarta EE and Hibernate ORM, featuring modern UI design and efficient data management for healthcare professionals.', 
+      img: getProjectImages(2, 7)[2], 
+      images: getProjectImages(2, 7),
+      githubLink: "https://github.com/idoufkirkamal/MediFlow",
+      techs: ["Jakarta EE", "Hibernate ORM", "Tailwind CSS", "MYSQL"]
+    },
+    { 
+      type: "Web Project", 
+      title: t('projects.projectData.examManager.title') || 'ExamManager', 
+      summary: t('projects.projectData.examManager.summary') || 'ExamManager is a comprehensive exam management application that allows teachers to input and modify student grades while enabling students to view their results, and manage grade complaints.', 
+      img: getProjectImages(3, 9)[4], 
+      images: getProjectImages(3, 9),
+      githubLink: "https://github.com/idoufkirkamal/ExamManager",
+      techs: ["CodeIgniter", "Tailwind CSS", "MySQL"]
+    },
+    { 
+      type: "Web Project", 
+      title: t('projects.projectData.volMaghreb.title') || 'Volmaghreb', 
+      summary: t('projects.projectData.volMaghreb.summary') || 'VolMaghreb is a user-friendly flight reservation platform that features a clean, modern design and enables efficient management of flight bookings for both customers and administrators.', 
+      img: getProjectImages(4, 13)[2], 
+      images: getProjectImages(4, 13),
+      link: "https://volmaghreb.onrender.com/volmaghreb", 
+      githubLink: "https://github.com/idoufkirkamal/volmaghreb",
+      techs: ["Spring Boot", "Spring Security", "Spring Data JPA", "Thymeleaf", "Bootstrap", "MySQL"]
+    }
+  ];
 
   const filteredProjects = projectsData.filter(project => filter === "All" || project.type === filter);
   
-  // Separate "This Portfolio" from other projects
-  const portfolioProject = filteredProjects.find(project => project.title === "This Portfolio");
-  const otherProjects = filteredProjects.filter(project => project.title !== "This Portfolio").reverse();
+  // Get the first project (which should be the portfolio project based on our array order)
+  const portfolioProject = filteredProjects[0];
+  const otherProjects = filteredProjects.slice(1).reverse();
   
   // Combine them with portfolio first, then reversed other projects
-  const orderedProjects = portfolioProject ? [portfolioProject, ...otherProjects] : otherProjects;
+  const orderedProjects = portfolioProject ? [portfolioProject, ...otherProjects] : [];
 
   return (
     <div>
       <Head>
-        <title>Kamal IDOUFKIR | Projects</title>
-        <meta name="description" content="Explore the portfolio projects of Kamal IDOUFKIR..." />
-        <meta property="og:title" content="Kamal IDOUFKIR | Software Engineering Projects" />
-        <meta property="og:description" content="Discover the innovative software engineering projects..." />
+        <title>{t('projects.title') || 'Projects - Kamal IDOUFKIR'}</title>
+        <meta name="description" content={t('projects.description') || 'Explore innovative projects by Kamal IDOUFKIR'} />
+        <meta name="keywords" content={t('projects.keywords') || 'Kamal IDOUFKIR projects, software development'} />
+        <meta property="og:title" content={t('projects.title') || 'Projects - Kamal IDOUFKIR'} />
+        <meta property="og:description" content={t('projects.description') || 'Explore innovative projects by Kamal IDOUFKIR'} />
         <meta property="og:url" content="https://www.kamalidoufkir.me/projects" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -238,20 +244,25 @@ const Projects = () => {
               {/* Foreground Text */}      
               <h2 className="relative font-extrabold mb-16">
                 <AnimatedText className='!text-5xl'>
-                    <span className="mr-3 !text-gray-700 uppercase">My</span>
-                    <span className="text-primary uppercase">Projects</span>
+                    <span className="mr-3 !text-gray-700 uppercase">{(t('projects.myProjects') || 'My Projects').split(' ')[0]}</span>
+                    <span className="text-primary uppercase">{(t('projects.myProjects') || 'My Projects').split(' ')[1]}</span>
                 </AnimatedText>    
               </h2>
             </div>
           {/* Filter Buttons */}
           <div className="flex space-x-4 mb-8 items-center justify-center">
-            {["All", "Web Project", "Mobile App", "Design"].map(category => (
+            {[
+              { key: "All", label: t('projects.filters.all') || 'All' },
+              { key: "Web Project", label: t('projects.filters.webProject') || 'Web Project' },
+              { key: "Mobile App", label: t('projects.filters.mobileApp') || 'Mobile App' },
+              { key: "Design", label: t('projects.filters.design') || 'Design' }
+            ].map(category => (
               <button 
-                key={category}
-                onClick={() => setFilter(category)}
-                className={`px-4 py-2 rounded-lg ${filter === category ? "bg-dark text-light" : "bg-light text-dark border border-gray-300"}`}
+                key={category.key}
+                onClick={() => setFilter(category.key)}
+                className={`px-4 py-2 rounded-lg ${filter === category.key ? "bg-dark text-light" : "bg-light text-dark border border-gray-300"}`}
               >
-                {category}
+                {category.label}
               </button>
             ))}
           </div>
@@ -270,3 +281,11 @@ const Projects = () => {
 };
 
 export default Projects;
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}

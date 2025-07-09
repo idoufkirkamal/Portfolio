@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { CircularText } from './Icons'
 import Link from 'next/link'
+import { useTranslation } from 'next-i18next'
 
 const HireMe = () => {
   const [isHovered, setIsHovered] = useState(false)
+  const { t } = useTranslation('common')
 
   return (
     <div className="fixed -left-1 -bottom-1 flex items-center justify-center overflow-hidden">
@@ -19,7 +21,7 @@ const HireMe = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          Hire Me
+          {t('home.hireMe')}
         </Link>
       </div>
     </div>

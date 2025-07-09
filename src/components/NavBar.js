@@ -5,6 +5,7 @@ import {useRouter} from 'next/router'
 import WhatsappIcon, { GithubIcon, LinkedInIcon } from './Icons'
 import { motion } from 'framer-motion'
 import { LanguageIcon } from './Icons'
+import { useTranslation } from 'next-i18next'
 
 const CustomLink = ({href, title, className=""}) => {
     const router = useRouter();
@@ -22,14 +23,21 @@ const CustomLink = ({href, title, className=""}) => {
 
 const NavBar = () => {
     const [isHovered, setIsHovered] = useState(false)
+    const { t } = useTranslation('common')
+    const router = useRouter()
+
+    const handleLanguageChange = (event) => {
+        const locale = event.target.value;
+        router.push(router.pathname, router.asPath, { locale });
+    }
   return (
     <header className='w-full px-24 py-8 font-medium flex items-center justify-between bg-light'>
         <nav className='z-10'>
-            <CustomLink href='/' title="Home" className='mr-4'/>
-            <CustomLink href='/about' title="About" className='mx-4'/>
-            <CustomLink href='/projects' title="Projects" className='mx-4'/>
-            <CustomLink href='/services' title="Services" className='mx-4'/>
-            <CustomLink href='/contact' title="Contact" className='ml-4'/>
+            <CustomLink href='/' title={t('navbar.home')} className='mr-4'/>
+            <CustomLink href='/about' title={t('navbar.about')} className='mx-4'/>
+            <CustomLink href='/projects' title={t('navbar.projects')} className='mx-4'/>
+            <CustomLink href='/services' title={t('navbar.services')} className='mx-4'/>
+            <CustomLink href='/contact' title={t('navbar.contact')} className='ml-4'/>
         </nav>
         <nav className='flex items-center justify-center flex-wrap z-10'>
             <motion.a href='https://github.com/idoufkirkamal' target={"_blank"}
@@ -59,14 +67,13 @@ const NavBar = () => {
                 />
                 <select 
                     className="bg-light text-dark hover:text-primary py-2 pl-8 pr-2 rounded-md text-lg font-semibold border-2 border-solid border-dark hover:border-primary cursor-pointer "
-                    defaultValue="language"
+                    value={router.locale}
+                    onChange={handleLanguageChange}
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                 >
-                    <option value="language" disabled hidden>Language</option>
                     <option value="en">English</option>
-                    <option value="fr">French</option>
-                    <option value="ar">Arabic</option>
+                    <option value="fr">Français</option>
                 </select>
             </div>
 

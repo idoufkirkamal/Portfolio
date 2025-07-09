@@ -11,16 +11,20 @@ import Certificates from '@/components/Certificates'
 import TransitionEffect from '@/components/TransitionEffect'
 import { AboutTitle } from '@/components/TitlesBackground'
 import { motion } from "framer-motion";
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-const about = () => {
+const About = () => {
+  const { t } = useTranslation('common')
+  
   return (
     <div>
       <Head>
-        <title>Kamal IDOUFKIR | About</title>
-        <meta name="description" content="Learn about Kamal IDOUFKIR, a dedicated Software Engineer from Morocco with expertise in software development and a commitment to innovation, quality, and user-centered design." />
-        <meta name="keywords" content="Kamal IDOUFKIR, about Kamal IDOUFKIR, software engineer, software development, web development, mobile development, Morocco, innovative solutions" />
-        <meta property="og:title" content="Kamal IDOUFKIR | About" />
-        <meta property="og:description" content="Discover the journey, skills, and expertise of Kamal IDOUFKIR, a passionate Software Engineer from Morocco focused on impactful, user-friendly digital solutions." />
+        <title>{t('about.title')}</title>
+        <meta name="description" content={t('about.description')} />
+        <meta name="keywords" content={t('about.keywords')} />
+        <meta property="og:title" content={t('about.title')} />
+        <meta property="og:description" content={t('about.description')} />
         <meta property="og:url" content="https://www.kamalidoufkir.me/about" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -36,8 +40,8 @@ const about = () => {
               {/* Foreground Text */}      
               <h2 className="relative font-extrabold mb-20">
                 <AnimatedText className='!text-5xl'>
-                    <span className="mr-3 !text-gray-700 uppercase">About</span>
-                    <span className="text-primary uppercase">Me</span>
+                    <span className="mr-3 !text-gray-700 uppercase">{t('about.aboutMe').split(' ')[0]}</span>
+                    <span className="text-primary uppercase">{t('about.aboutMe').split(' ')[1]}</span>
                 </AnimatedText>    
               </h2>
             </div>         
@@ -55,7 +59,7 @@ const about = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <h1 className="text-5xl font-extrabold text-primary"><span className='!mr-3 !text-gray-700 font-bold'>Kamal</span>IDOUFKIR</h1>
-                <p className="text-gray-600 text-lg">Software Engineer | React, Next.js, Node.js, Spring Boot, Laravel, Tailwind CSS</p>
+                <p className="text-gray-600 text-lg">{t('about.position')}</p>
               </motion.div>
 
               {/* Horizontal line */}
@@ -101,10 +105,10 @@ const about = () => {
                   transition={{ duration: 0.5, delay: 0.8 }}
                 >
                   <p className="font-medium text-left mb-2 text-dark">
-                    Hi, I&#39;m Kamal, a Software Engineer from Morocco and currently pursuing a Master&#39;s degree in Software Engineering. My work centers on clear design, clean code, and thoughtful problem-solving. I&#39;m always exploring new tools and technologies to keep my work fresh and effective. Every project I take on is an opportunity to learn, improve, and make an impact.
+                    {t('about.intro')}
                   </p>
                   <p className="font-medium text-left text-dark">
-                    Whether I&#39;m working on a website, mobile app, or other digital product, I bring my commitment to creating user-friendly, powerful, and clear solutions to every project. I look forward to the opportunity to bring my skills and passion to your next project.
+                    {t('about.commitment')}
                   </p>
                 </motion.div>
               </motion.div>
@@ -116,39 +120,39 @@ const about = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1 }}
               >
-                <h3 className="text-xl font-semibold text-primary mb-4">Proficient in:</h3>
+                <h3 className="text-xl font-semibold text-primary mb-4">{t('about.proficientIn')}</h3>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
                   <li className="flex">
-                    <span className="font-bold mr-2">Frontend:</span>
-                    <span>React, Next.js, Tailwind CSS, TypeScript</span>
+                    <span className="font-bold mr-2">{t('about.frontend')}</span>
+                    <span>{t('about.frontendTech')}</span>
                   </li>
                   <li className="flex">
-                    <span className="font-bold mr-2 flex-shrink-0">Backend:</span>
-                    <span>Node.js, Express.js, Prisma ORM, Spring Boot, Hibernate (Spring Data JPA), Laravel, Eloquent ORM</span>
+                    <span className="font-bold mr-2 flex-shrink-0">{t('about.backend')}</span>
+                    <span>{t('about.backendTech')}</span>
                   </li>
                   <li className="flex">
-                    <span className="font-bold mr-2">Database:</span>
-                    <span>MySQL, PostgreSQL</span>
+                    <span className="font-bold mr-2">{t('about.database')}</span>
+                    <span>{t('about.databaseTech')}</span>
                   </li>
                   <li className="flex">
-                    <span className="font-bold mr-2 flex-shrink-0">Auth & Security:</span>
-                    <span>JWT, bcrypt, Helmet.js, Laravel Sanctum</span>
+                    <span className="font-bold mr-2 flex-shrink-0">{t('about.authSecurity')}</span>
+                    <span>{t('about.authSecurityTech')}</span>
                   </li>
                   <li className="flex">
-                    <span className="font-bold mr-2">DevOps:</span>
-                    <span>Docker, GitHub Actions, Railway, Vercel, Kubernetes</span>
+                    <span className="font-bold mr-2">{t('about.devops')}</span>
+                    <span>{t('about.devopsTech')}</span>
                   </li>
                   <li className="flex">
-                    <span className="font-bold mr-2">Testing:</span>
-                    <span>Jest, Playwright, React Testing Library, JUnit, PHPUnit</span>
+                    <span className="font-bold mr-2">{t('about.testing')}</span>
+                    <span>{t('about.testingTech')}</span>
                   </li>
                   <li className="flex">
-                    <span className="font-bold mr-2 flex-shrink-0">API Tools:</span>
-                    <span>Postman, Thunder Client</span>
+                    <span className="font-bold mr-2 flex-shrink-0">{t('about.apiTools')}</span>
+                    <span>{t('about.apiToolsTech')}</span>
                   </li>
                   <li className="flex">
-                    <span className="font-bold mr-2 flex-shrink-0">Cloud Providers:</span>
-                    <span>AWS, Azure</span>
+                    <span className="font-bold mr-2 flex-shrink-0">{t('about.cloudProviders')}</span>
+                    <span>{t('about.cloudProvidersTech')}</span>
                   </li>
                 </ul>
               </motion.div>
@@ -163,4 +167,12 @@ const about = () => {
   )
 }
 
-export default about
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  }
+}
+
+export default About

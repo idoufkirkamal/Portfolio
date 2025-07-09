@@ -12,9 +12,11 @@ import Certificate5 from '../../public/images/certificates/5.png';
 import Certificate6 from '../../public/images/certificates/6.png';
 import Certificate7 from '../../public/images/certificates/7.png';
 import Certificate8 from '../../public/images/certificates/8.png';
+import { useTranslation } from 'next-i18next';
 
 const Card = ({ site, title, img, link, onImageClick }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const { t } = useTranslation('common');
 
   return (
     <article
@@ -46,7 +48,7 @@ const Card = ({ site, title, img, link, onImageClick }) => {
                 target="_blank"
                 className="rounded-lg bg-dark text-light p-2 px-6 text-md font-semibold hover:bg-primary"
               >
-                View Certificate
+                {t('certificates.viewCertificate')}
               </Link>
             </motion.div>
           )}
@@ -102,6 +104,7 @@ const ImagePopup = ({ isOpen, onClose, image, title, site }) => {
 };
 
 const Certificates = () => {
+  const { t } = useTranslation('common');
   const [popupImage, setPopupImage] = useState(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -178,8 +181,8 @@ const Certificates = () => {
         {/* Foreground Text */}
         <h2 className="relative font-extrabold mb-20">
           <AnimatedText className='!text-5xl'>
-            <span className="mr-3 !text-gray-700 uppercase">My</span>
-            <span className="text-primary uppercase">Certificates</span>
+            <span className="mr-3 !text-gray-700 uppercase">{t('certificates.my')}</span>
+            <span className="text-primary uppercase">{t('certificates.title')}</span>
           </AnimatedText>
         </h2>
       </div>

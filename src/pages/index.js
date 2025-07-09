@@ -12,19 +12,23 @@ import ParticlesContainer from '@/components/ParticlesContainer'
 import TypewriterAnimation from '@/components/TypewriterAnimation'
 import DevImg from '../../public/images/profile/Profile-img1.png'
 import Badge from '@/components/Badge'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const { t } = useTranslation('common')
+  
   return (
     <>
       <Head>
-        <title>Kamal IDOUFKIR - Software Engineer</title>
-        <meta name="description" content="Welcome to the portfolio of Kamal IDOUFKIR, a passionate Software Engineer from Morocco. Currently pursuing a Master’s degree in Software Engineering, Kamal is dedicated to creating innovative, user-friendly software solutions that make a real impact." />
+        <title>{t('home.title')}</title>
+        <meta name="description" content={t('home.description')} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="keywords" content="Kamal IDOUFKIR, Software Engineer Morocco, software development, software engineer portfolio, innovative software solutions, user-friendly applications, software engineering master’s degree, software solutions Morocco" />
-        <meta property="og:title" content="Kamal IDOUFKIR - Software Engineer | Innovative Solutions in Software Development" />
-        <meta property="og:description" content="Discover the portfolio of Kamal IDOUFKIR, a software engineer passionate about developing user-friendly, innovative software solutions. Based in Morocco, Kamal is currently pursuing a Master’s degree in Software Engineering." />
+        <meta name="keywords" content={t('home.keywords')} />
+        <meta property="og:title" content={t('home.title')} />
+        <meta property="og:description" content={t('home.description')} />
         <meta property="og:url" content="https://kamalidoufkir.me" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -40,19 +44,19 @@ export default function Home() {
                     icon={<BusinessbagIcon/>} 
                     endCountNum={1} 
                     endCountText='+'
-                    BadgeText="Years Of Experience"
+                    BadgeText={t('home.yearsExperience')}
                   />
                   <Badge 
                     containerStyle="absolute top-[80%] -left-[1rem]"
                     icon={<ProjectsIcon/>} 
                     endCountNum={4} 
-                    BadgeText="Finished Projects"
+                    BadgeText={t('home.finishedProjects')}
                   />
                   <Badge 
                     containerStyle="absolute top-[55%] -right-8"
                     icon={<TeamProjectsIcon/>} 
                     endCountNum={3} 
-                    BadgeText="Team Projects"
+                    BadgeText={t('home.teamProjects')}
                   />
                   <div className=' w-[400px] h-[400px] absolute -top-1 -right-2'></div>
                    <div className="w-[410px] h-[362px] bg-no-repeat relative bg-bottom" >
@@ -62,18 +66,18 @@ export default function Home() {
               </div>
               <div className='w-1/2 flex flex-col items-center self-center'>
               <AnimatedText className='!text-[2.9rem] text-left z-10'>
-                <span>Turning Ideas into</span>
+                <span>{t('home.turningIdeas')}</span>
                 <br />
                 <span>
-                  <TypewriterAnimation /> Software!
+                  <TypewriterAnimation /> {t('home.software')}
                 </span>
               </AnimatedText>
                     <p className='my-4 text-base font-medium z-10 text-dark'>
-                    As a skilled software engineer who enjoys creating helpful, user-friendly, clean and easy-to-use software, I love turning ideas into working applications that solve real problems. Explore my work to see how I can help bring your ideas to life.
+                    {t('home.description_text')}
                     </p>
                     <div className='flex items-center self-start mt-2 '>
                       <Link className='flex items-center bg-dark text-light p-2.5 pl-6 pr-5 rounded-lg text-lg font-semibold hover:bg-light hover:text-primary hover:border-primary border-2 border-solid border-transparent z-10' href="/IDOUFKIR_Kamal_CV.pdf" download={true}>
-                        Download CV <DownloadIcon className={"!w-5 ml-2"}/>
+                        {t('home.downloadCV')} <DownloadIcon className={"!w-5 ml-2"}/>
                       </Link>
                     </div>
               </div>
@@ -83,4 +87,12 @@ export default function Home() {
       </main>
     </>
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  }
 }

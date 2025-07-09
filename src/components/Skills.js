@@ -22,6 +22,7 @@ import icon18 from '../../public/images/skills_icons/18.png';
 import icon19 from '../../public/images/skills_icons/19.png';
 import icon20 from '../../public/images/skills_icons/20.png';
 import icon21 from '../../public/images/skills_icons/21.png';
+import { useTranslation } from 'next-i18next';
 
 import { SkillsTitle } from './TitlesBackground';
 import AnimatedText from './AnimatedText';
@@ -29,11 +30,13 @@ import AnimatedText from './AnimatedText';
 const skillsIcons = [
   icon1, icon2, icon3, icon4, icon5,
   icon6, icon7, icon8, icon9, icon10,
-  icon11, icon12, icon13, icon14,icon15, 
+  icon11, icon12, icon13, icon14, icon15, 
   icon16, icon17, icon18, icon19, icon20, icon21
 ];
 
 const Skills = () => {
+  const { t } = useTranslation('common');
+  
   return (
     <div className='mt-32'>
       {/* Skills Banner */}
@@ -45,8 +48,8 @@ const Skills = () => {
           {/* Foreground Text */}      
           <h2 className="relative font-extrabold mb-20">
             <AnimatedText className='!text-5xl'>
-                <span className="mr-3 !text-gray-700 uppercase">My</span>
-                <span className="text-primary uppercase">Skills</span>
+                <span className="mr-3 !text-gray-700 uppercase">{t('skills.my')}</span>
+                <span className="text-primary uppercase">{t('skills.title')}</span>
             </AnimatedText>    
           </h2>
         </div>  

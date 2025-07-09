@@ -4,13 +4,14 @@ import '@/styles/globals.css'
 import {Montserrat} from 'next/font/google'
 import { useRouter } from 'next/router';
 import { AnimatePresence } from 'framer-motion';
+import { appWithTranslation } from 'next-i18next';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: "--font-mont"
 })
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   const router = useRouter();
   return (
   <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}>
@@ -21,3 +22,5 @@ export default function App({ Component, pageProps }) {
     {router.pathname !== '/' && <Footer />}
   </main>)
 }
+
+export default appWithTranslation(App);
