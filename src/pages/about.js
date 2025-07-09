@@ -100,10 +100,10 @@ const about = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.8 }}
                 >
-                  <p className="font-medium text-left mb-2">
+                  <p className="font-medium text-left mb-2 text-dark">
                     Hi, I&#39;m Kamal, a Software Engineer from Morocco and currently pursuing a Master&#39;s degree in Software Engineering. My work centers on clear design, clean code, and thoughtful problem-solving. I&#39;m always exploring new tools and technologies to keep my work fresh and effective. Every project I take on is an opportunity to learn, improve, and make an impact.
                   </p>
-                  <p className="font-medium text-left">
+                  <p className="font-medium text-left text-dark">
                     Whether I&#39;m working on a website, mobile app, or other digital product, I bring my commitment to creating user-friendly, powerful, and clear solutions to every project. I look forward to the opportunity to bring my skills and passion to your next project.
                   </p>
                 </motion.div>

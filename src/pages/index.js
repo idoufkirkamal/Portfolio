@@ -68,7 +68,7 @@ export default function Home() {
                   <TypewriterAnimation /> Software!
                 </span>
               </AnimatedText>
-                    <p className='my-4 text-base font-medium z-10 '>
+                    <p className='my-4 text-base font-medium z-10 text-dark'>
                     As a skilled software engineer who enjoys creating helpful, user-friendly, clean and easy-to-use software, I love turning ideas into working applications that solve real problems. Explore my work to see how I can help bring your ideas to life.
                     </p>
                     <div className='flex items-center self-start mt-2 '>

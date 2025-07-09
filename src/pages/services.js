@@ -102,10 +102,10 @@ const services = () => {
                 <div className={`relative mb-4 p-4 rounded-full transition-colors duration-300 z-10 ${service.circleColor}`}>
                   {service.icon}
                 </div>
-                <h3 className="text-lg font-semibold mb-2 transition-colors duration-300 group-hover:text-light z-10">
+                <h3 className="text-lg font-semibold mb-2 transition-colors duration-300 group-hover:text-light text-dark z-10">
                   {service.title}
                 </h3>
-                <p className="group-hover:text-light transition-colors duration-300 z-10">
+                <p className="group-hover:text-light transition-colors duration-300 z-10 text-dark">
                   {service.description}
                 </p>
 

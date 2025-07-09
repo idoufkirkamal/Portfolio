@@ -2,10 +2,9 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Logo from './Logo'
 import {useRouter} from 'next/router'
-import WhatsappIcon, { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons'
+import WhatsappIcon, { GithubIcon, LinkedInIcon } from './Icons'
 import { motion } from 'framer-motion'
 import { LanguageIcon } from './Icons'
-import useThemSwitcher from './hooks/useThemSwitcher'
 
 const CustomLink = ({href, title, className=""}) => {
     const router = useRouter();
@@ -22,7 +21,6 @@ const CustomLink = ({href, title, className=""}) => {
 }
 
 const NavBar = () => {
-    const [mode, setMode] = useThemSwitcher();
     const [isHovered, setIsHovered] = useState(false)
   return (
     <header className='w-full px-24 py-8 font-medium flex items-center justify-between bg-light'>
@@ -53,19 +51,6 @@ const NavBar = () => {
             >
                 <LinkedInIcon/>
             </motion.a>
-
-            <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                    className={`ml-3 flex items-center justify-center rounded-full p-1 w-6
-                        ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
-                    `}
-                > 
-                {
-                    mode === "light" 
-                    ? <SunIcon className={"fill-dark"}/>
-                    : <MoonIcon className={"fill-dark"}/>
-                    
-                }
-            </button>
 
             <div className='relative ml-4'>
                 <LanguageIcon 

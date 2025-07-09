@@ -39,7 +39,7 @@ const ProjectCard = ({ title, summary, img, images, githubLink, techs, link }) =
           </div>
         </div>
         <div className="w-1/2 flex flex-col items-start justify-between pl-8">
-          <h2 className="my-1 w-full text-left text-3xl font-bold leading-tight">{title}</h2>
+          <h2 className="my-1 w-full text-left text-3xl font-bold leading-tight text-dark">{title}</h2>
           <p className="my-3 font-medium text-dark text-lg leading-relaxed">{summary}</p>
           
           {/* Technologies */}
@@ -249,7 +249,7 @@ const Projects = () => {
               <button 
                 key={category}
                 onClick={() => setFilter(category)}
-                className={`px-4 py-2 rounded-lg ${filter === category ? "bg-dark text-light" : "bg-light text-dark"}`}
+                className={`px-4 py-2 rounded-lg ${filter === category ? "bg-dark text-light" : "bg-light text-dark border border-gray-300"}`}
               >
                 {category}
               </button>

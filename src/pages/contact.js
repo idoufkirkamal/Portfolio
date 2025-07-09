@@ -129,7 +129,7 @@ const Contact = () => {
                         placeholder="Your Name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-white text-dark"
                       />
                     </label>
                     <label className="block col-span-full">
@@ -140,7 +140,7 @@ const Contact = () => {
                         placeholder="Your Email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-white text-dark"
                       />
                     </label>
                     <label className="block col-span-full">
@@ -151,7 +151,7 @@ const Contact = () => {
                         placeholder="Your Subject"
                         value={formData.subject}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-white text-dark"
                       />
                     </label>
                   </div>
@@ -163,7 +163,7 @@ const Contact = () => {
                       rows="8"
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary bg-white text-dark"
                     ></textarea>
                   </label>
 
