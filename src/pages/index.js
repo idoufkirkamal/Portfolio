@@ -76,9 +76,9 @@ export default function Home() {
                     {t('home.description_text')}
                     </p>
                     <div className='flex items-center self-start mt-2 '>
-                      <Link className='flex items-center bg-dark text-light p-2.5 pl-6 pr-5 rounded-lg text-lg font-semibold hover:bg-light hover:text-primary hover:border-primary border-2 border-solid border-transparent z-10' href="/IDOUFKIR_Kamal_CV.pdf" download={true}>
+                      <a className='flex items-center bg-dark text-light p-2.5 pl-6 pr-5 rounded-lg text-lg font-semibold hover:bg-light hover:text-primary hover:border-primary border-2 border-solid border-transparent z-10' href="/IDOUFKIR_Kamal_CV.pdf" download target="_blank" rel="noopener noreferrer">
                         {t('home.downloadCV')} <DownloadIcon className={"!w-5 ml-2"}/>
-                      </Link>
+                      </a>
                     </div>
               </div>
           </div>

@@ -11,40 +11,51 @@
     "title": "Kamal IDOUFKIR - Ingénieur Logiciel",
     "description": "Bienvenue sur le portfolio de Kamal IDOUFKIR, un ingénieur logiciel passionné du Maroc. Actuellement en master d'ingénierie logicielle, Kamal se consacre à la création de solutions logicielles innovantes et conviviales qui ont un impact réel.",
     "keywords": "Kamal IDOUFKIR, Ingénieur Logiciel Maroc, développement logiciel, portfolio ingénieur logiciel, solutions logicielles innovantes, applications conviviales, master ingénierie logicielle, solutions logicielles Maroc",
-    "turningIdeas": "Transformer les idées en",
+    "turningIdeas": "Donner vie à vos idées avec des",
     "software": "Logiciels !",
-    "description_text": "En tant qu'ingénieur logiciel qualifié qui aime créer des logiciels utiles, conviviaux, propres et faciles à utiliser, j'adore transformer les idées en applications fonctionnelles qui résolvent de vrais problèmes. Explorez mon travail pour voir comment je peux vous aider à donner vie à vos idées.",
+    "description_text": "En tant qu'ingénieur logiciel passionné qui aime créer des logiciels utiles, conviviaux, propres et faciles à utiliser, j'adore transformer les idées en applications fonctionnelles qui résolvent de vrais problèmes. Explorez mon travail pour voir comment je peux vous aider à donner vie à vos idées.",
     "downloadCV": "Télécharger CV",
     "yearsExperience": "Années d'expérience",
     "finishedProjects": "Projets terminés",
     "teamProjects": "Projets d'équipe",
-    "hireMe": "Embauchez-moi"
+    "hireMe": "Hire Me",
+    "typewriter": {
+      "powerful": "Puissants",
+      "modern": "Modernes",
+      "clean": "Propres",
+      "userFriendly": "Conviviaux",
+      "secure": "Sécurisés"
+    }
   },
   "about": {
     "title": "Kamal IDOUFKIR | À propos",
     "description": "Découvrez Kamal IDOUFKIR, un ingénieur logiciel dévoué du Maroc avec une expertise en développement logiciel et un engagement envers l'innovation, la qualité et la conception centrée sur l'utilisateur.",
     "keywords": "Kamal IDOUFKIR, à propos de Kamal IDOUFKIR, ingénieur logiciel, développement logiciel, développement web, développement mobile, Maroc, solutions innovantes",
     "aboutMe": "À propos de moi",
-    "position": "Ingénieur Logiciel | React, Next.js, Node.js, Spring Boot, Laravel, Tailwind CSS",
+    "position": "Ingénieur Logiciel | React, Next.js, Node.js, Spring Boot, Laravel",
     "intro": "Salut, je suis Kamal, un ingénieur logiciel du Maroc et actuellement en master d'ingénierie logicielle. Mon travail se concentre sur un design clair, du code propre et une résolution réfléchie des problèmes. J'explore toujours de nouveaux outils et technologies pour garder mon travail frais et efficace. Chaque projet que j'entreprends est une opportunité d'apprendre, de m'améliorer et d'avoir un impact.",
     "commitment": "Que je travaille sur un site web, une application mobile ou un autre produit numérique, j'apporte mon engagement à créer des solutions conviviales, puissantes et claires à chaque projet. J'ai hâte d'avoir l'opportunité d'apporter mes compétences et ma passion à votre prochain projet.",
     "proficientIn": "Compétent en :",
     "frontend": "Frontend :",
     "frontendTech": "React, Next.js, Tailwind CSS, TypeScript",
     "backend": "Backend :",
-    "backendTech": "Node.js, Express.js, Prisma ORM, Spring Boot, Hibernate (Spring Data JPA), Laravel, Eloquent ORM",
+    "backendTech1": "Node.js, Express.js, Prisma ORM",
+    "backendTech2": "Spring Boot, Hibernate (Spring Data JPA)",
+    "backendTech3": "Laravel, Eloquent ORM",
     "database": "Base de données :",
     "databaseTech": "MySQL, PostgreSQL",
     "authSecurity": "Auth et Sécurité :",
-    "authSecurityTech": "JWT, bcrypt, Helmet.js, Laravel Sanctum",
-    "devops": "DevOps :",
-    "devopsTech": "Docker, GitHub Actions, Railway, Vercel, Kubernetes",
-    "testing": "Tests :",
-    "testingTech": "Jest, Playwright, React Testing Library, JUnit, PHPUnit",
-    "apiTools": "Outils API :",
-    "apiToolsTech": "Postman, Thunder Client",
+    "authSecurityTech": "JWT, NextAuth.js, bcrypt, Spring Security, Laravel Sanctum",
+    "devopsDeployment": "DevOps et Déploiement:",
+    "devopsTech": "Docker, GitHub Actions, Jenkins, GitLab CI/CD, Vercel, Render/Railway",
     "cloudProviders": "Fournisseurs Cloud :",
-    "cloudProvidersTech": "AWS, Azure"
+    "cloudProvidersTech": "AWS",
+    "testing": "Tests :",
+    "testingTech": "Jest, React Testing Library, Cypress, JUnit, PHPUnit",
+    "apiTools": "Outils API :",
+    "apiToolsTech": "Postman",
+    "methodology": "Méthodologies :",
+    "methodologyTech": "Agile (Scrum, Kanban)"
   },
   "projects": {
     "title": "Kamal IDOUFKIR | Projets",
@@ -62,11 +73,11 @@
     "projectData": {
       "thisPortfolio": {
         "title": "Ce Portfolio",
-        "summary": "Un site web de portfolio moderne et réactif construit avec Next.js et Tailwind CSS, avec un design épuré, des animations fluides et des composants interactifs."
+        "summary": "Un site web de portfolio moderne et réactif développer avec Next.js et Tailwind CSS, avec un design épuré, des animations fluides et des composants interactifs."
       },
       "mediFlow": {
         "title": "MediFlow",
-        "summary": "Un système complet de gestion de rendez-vous médicaux construit avec Jakarta EE et Hibernate ORM, avec un design d'interface moderne et une gestion efficace des données pour les professionnels de la santé."
+        "summary": "Un système complet de gestion de rendez-vous médicaux développer avec Jakarta EE et Hibernate ORM, avec un design d'interface moderne et une gestion efficace des données pour les professionnels de la santé."
       },
       "examManager": {
         "title": "ExamManager",
@@ -171,7 +182,6 @@
   "footer": {
     "builtWith": "Construit avec",
     "and": "et",
-    "by": "par",
-    "allRightsReserved": "Tous droits réservés."
+    "by": "par"
   }
 }

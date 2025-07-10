@@ -121,40 +121,46 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 1 }}
               >
                 <h3 className="text-xl font-semibold text-primary mb-4">{t('about.proficientIn')}</h3>
-                <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li className="flex">
-                    <span className="font-bold mr-2">{t('about.frontend')}</span>
-                    <span>{t('about.frontendTech')}</span>
-                  </li>
-                  <li className="flex">
-                    <span className="font-bold mr-2 flex-shrink-0">{t('about.backend')}</span>
-                    <span>{t('about.backendTech')}</span>
-                  </li>
-                  <li className="flex">
-                    <span className="font-bold mr-2">{t('about.database')}</span>
-                    <span>{t('about.databaseTech')}</span>
-                  </li>
-                  <li className="flex">
-                    <span className="font-bold mr-2 flex-shrink-0">{t('about.authSecurity')}</span>
-                    <span>{t('about.authSecurityTech')}</span>
-                  </li>
-                  <li className="flex">
-                    <span className="font-bold mr-2">{t('about.devops')}</span>
-                    <span>{t('about.devopsTech')}</span>
-                  </li>
-                  <li className="flex">
-                    <span className="font-bold mr-2">{t('about.testing')}</span>
-                    <span>{t('about.testingTech')}</span>
-                  </li>
-                  <li className="flex">
-                    <span className="font-bold mr-2 flex-shrink-0">{t('about.apiTools')}</span>
-                    <span>{t('about.apiToolsTech')}</span>
-                  </li>
-                  <li className="flex">
-                    <span className="font-bold mr-2 flex-shrink-0">{t('about.cloudProviders')}</span>
-                    <span>{t('about.cloudProvidersTech')}</span>
-                  </li>
-                </ul>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <span className="font-bold text-primary mb-1">{t('about.frontend')}</span>
+                    <span className="text-gray-700">{t('about.frontendTech')}</span>
+                  </div>
+                  <div className="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <span className="font-bold text-primary mb-1">{t('about.backend')}</span>
+                    <span className="text-gray-700">{t('about.backendTech1')}</span>
+                    <span className="text-gray-700">{t('about.backendTech2')}</span>
+                    <span className="text-gray-700">{t('about.backendTech3')}</span>
+                  </div>
+                  <div className="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <span className="font-bold text-primary mb-1">{t('about.database')}</span>
+                    <span className="text-gray-700">{t('about.databaseTech')}</span>
+                  </div>
+                  <div className="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <span className="font-bold text-primary mb-1">{t('about.authSecurity')}</span>
+                    <span className="text-gray-700">{t('about.authSecurityTech')}</span>
+                  </div>
+                  <div className="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <span className="font-bold text-primary mb-1">{t('about.devopsDeployment')}</span>
+                    <span className="text-gray-700">{t('about.devopsTech')}</span>
+                  </div>
+                  <div className="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <span className="font-bold text-primary mb-1">{t('about.cloudProviders')}</span>
+                    <span className="text-gray-700">{t('about.cloudProvidersTech')}</span>
+                  </div>
+                  <div className="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <span className="font-bold text-primary mb-1">{t('about.testing')}</span>
+                    <span className="text-gray-700">{t('about.testingTech')}</span>
+                  </div>
+                  <div className="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <span className="font-bold text-primary mb-1">{t('about.apiTools')}</span>
+                    <span className="text-gray-700">{t('about.apiToolsTech')}</span>
+                  </div>
+                  <div className="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <span className="font-bold text-primary mb-1">{t('about.methodology')}</span>
+                    <span className="text-gray-700">{t('about.methodologyTech')}</span>
+                  </div>
+                </div>
               </motion.div>
             </motion.div>
           <Skills />

@@ -18,33 +18,44 @@
     "yearsExperience": "Years Of Experience",
     "finishedProjects": "Finished Projects",
     "teamProjects": "Team Projects",
-    "hireMe": "Hire Me"
+    "hireMe": "Hire Me",
+    "typewriter": {
+      "powerful": "Powerful",
+      "modern": "Modern",
+      "clean": "Clean",
+      "userFriendly": "User-Friendly",
+      "secure": "Secure"
+    }
   },
   "about": {
     "title": "Kamal IDOUFKIR | About",
     "description": "Learn about Kamal IDOUFKIR, a dedicated Software Engineer from Morocco with expertise in software development and a commitment to innovation, quality, and user-centered design.",
     "keywords": "Kamal IDOUFKIR, about Kamal IDOUFKIR, software engineer, software development, web development, mobile development, Morocco, innovative solutions",
     "aboutMe": "About Me",
-    "position": "Software Engineer | React, Next.js, Node.js, Spring Boot, Laravel, Tailwind CSS",
+    "position": "Software Engineer | React, Next.js, Node.js, Spring Boot, Laravel",
     "intro": "Hi, I'm Kamal, a Software Engineer from Morocco and currently pursuing a Master's degree in Software Engineering. My work centers on clear design, clean code, and thoughtful problem-solving. I'm always exploring new tools and technologies to keep my work fresh and effective. Every project I take on is an opportunity to learn, improve, and make an impact.",
     "commitment": "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to creating user-friendly, powerful, and clear solutions to every project. I look forward to the opportunity to bring my skills and passion to your next project.",
     "proficientIn": "Proficient in:",
     "frontend": "Frontend:",
     "frontendTech": "React, Next.js, Tailwind CSS, TypeScript",
     "backend": "Backend:",
-    "backendTech": "Node.js, Express.js, Prisma ORM, Spring Boot, Hibernate (Spring Data JPA), Laravel, Eloquent ORM",
+    "backendTech1": "Node.js, Express.js, Prisma ORM",
+    "backendTech2": "Spring Boot, Hibernate (Spring Data JPA)",
+    "backendTech3": "Laravel, Eloquent ORM",
     "database": "Database:",
     "databaseTech": "MySQL, PostgreSQL",
     "authSecurity": "Auth & Security:",
-    "authSecurityTech": "JWT, bcrypt, Helmet.js, Laravel Sanctum",
-    "devops": "DevOps:",
-    "devopsTech": "Docker, GitHub Actions, Railway, Vercel, Kubernetes",
-    "testing": "Testing:",
-    "testingTech": "Jest, Playwright, React Testing Library, JUnit, PHPUnit",
-    "apiTools": "API Tools:",
-    "apiToolsTech": "Postman, Thunder Client",
+    "authSecurityTech": "JWT, NextAuth.js, bcrypt, Spring Security, Laravel Sanctum",
+    "devopsDeployment": "DevOps & Deployment:",
+    "devopsTech": "Docker, GitHub Actions, Jenkins, GitLab CI/CD, Vercel, Render/Railway",
     "cloudProviders": "Cloud Providers:",
-    "cloudProvidersTech": "AWS, Azure"
+    "cloudProvidersTech": "AWS",
+    "testing": "Testing:",
+    "testingTech": "Jest, React Testing Library, Cypress, JUnit, PHPUnit",
+    "apiTools": "API Tools:",
+    "apiToolsTech": "Postman",
+    "methodology": "Methodologies:",
+    "methodologyTech": "Agile (Scrum, Kanban)"
   },
   "projects": {
     "title": "Kamal IDOUFKIR | Projects",
@@ -104,8 +115,8 @@
     "description": "Get in touch with Kamal IDOUFKIR for software development projects, collaborations, or professional inquiries.",
     "keywords": "contact Kamal IDOUFKIR, hire software engineer, software development contact, collaboration",
     "contactMe": "Contact Me",
-    "contact": "Contact",
-    "me": "Me",
+    "contact": "Get in",
+    "me": "touch",
     "letsBringIdeasToLife": "Let's Bring Your Ideas to Life!",
     "formDescription": "If you have any suggestions or a project in mind, please fill out the form, and I will get back to you soon!",
     "contactInfo": {
@@ -149,7 +160,7 @@
     "title": "Education",
     "myEducation": "My Education",
     "description": "Academic Background",
-    "dut": "University Diploma of Technology in Computer Engineering",
+    "dut": "University Diploma of Technology (DUT) in Computer Engineering",
     "dutTime": "2021-2023",
     "dutInfo": "A two-year program focused on equipping students with essential skills in computer science and information technology.",
     "licence": "Bachelor of Excellence in Software Engineering",
@@ -171,7 +182,6 @@
   "footer": {
     "builtWith": "Built with",
     "and": "and",
-    "by": "by",
-    "allRightsReserved": "All rights reserved."
+    "by": "by"
   }
 }
