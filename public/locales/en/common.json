@@ -47,7 +47,7 @@
     "authSecurity": "Auth & Security:",
     "authSecurityTech": "JWT, NextAuth.js, bcrypt, Spring Security, Laravel Sanctum",
     "devopsDeployment": "DevOps & Deployment:",
-    "devopsTech": "Docker, GitHub Actions, Jenkins, GitLab CI/CD, Vercel, Render/Railway",
+    "devopsTech": "Docker, Kubernetes, GitHub Actions, Jenkins, GitLab CI/CD, Vercel, Render/Railway",
     "cloudProviders": "Cloud Providers:",
     "cloudProvidersTech": "AWS",
     "testing": "Testing:",

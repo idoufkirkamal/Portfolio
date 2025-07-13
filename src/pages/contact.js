@@ -177,7 +177,7 @@ const Contact = () => {
                     {t('contact.form.sendMessage')}
                   </motion.button>
 
-                  {submitted && <p className="text-green-600 mt-4">{t('contact.form.thankYouMessage')}</p>}
+                  {/* {submitted && <p className="text-green-600 mt-4">{t('contact.form.thankYouMessage')}</p>} */}
                 </form>
               </div>
             </div>
