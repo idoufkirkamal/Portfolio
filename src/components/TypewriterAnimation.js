@@ -3,16 +3,17 @@ import { TypeAnimation } from 'react-type-animation';
 import { useTranslation } from 'next-i18next'
 
 const TypewriterAnimation = () => {
-    const { t } = useTranslation('common')
-    
+    const { t, i18n } = useTranslation('common')
+
     return (
         <TypeAnimation
+          key={i18n.language}
           sequence={[
-            t('home.typewriter.powerful'),
-            3000,
             t('home.typewriter.modern'),
-            3000,
+            3200,
             t('home.typewriter.clean'),
+            3000,
+            t('home.typewriter.efficient'),
             3000,
             t('home.typewriter.userFriendly'),
             3000,

@@ -11,9 +11,9 @@ Visit the live portfolio: [kamalidoufkir.me](https://kamalidoufkir.me)
 I'm **Kamal IDOUFKIR**, a Software Engineer from Morocco, currently pursuing a Master's degree in Software Engineering. I'm dedicated to creating modern, user-friendly software solutions that make a real impact.
 
 - 📧 **Email**: idoufkir.kamal@gmail.com
-- 📍 **Location**: Agadir, Morocco
 - 🔗 **LinkedIn**: [linkedin.com/in/kamal-idoufkir](https://www.linkedin.com/in/kamal-idoufkir)
 - 🐙 **GitHub**: [github.com/idoufkirkamal](https://github.com/idoufkirkamal)
+- 📍 **Location**: Agadir, Morocco
 - 📱 **Phone**: +212 7 080 871 65
 
 ## ✨ Features

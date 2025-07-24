@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
 import { motion } from 'framer-motion'
-import { FaCode, FaMobileAlt, FaChartLine, FaCloud, FaDatabase, FaPencilRuler , FaShoppingCart, FaServer } from 'react-icons/fa'
+import { FaCode, FaMobileAlt, FaChartLine, FaCloud, FaDatabase, FaPencilRuler , FaShoppingCart, FaServer, FaCogs, FaBug } from 'react-icons/fa'
 import TransitionEffect from '@/components/TransitionEffect'
 import { ServicesTitle } from '@/components/TitlesBackground';
 import { useTranslation } from 'next-i18next'
@@ -23,28 +23,42 @@ const Services = () => {
     {
       title: t('services.uiUxDesignTitle'),
       description: t('services.uiUxDesignDescription'),
-      icon: <FaPencilRuler className="w-8 h-8 text-purple-500 transition-colors duration-300" />,
-      backgroundColor: 'group-hover:bg-purple-500',
-      circleColor: 'bg-purple-200 group-hover:bg-light',
-    },
-    {
-      title: t('services.mobileAppDevelopmentTitle'),
-      description: t('services.mobileAppDevelopmentDescription'),
-      icon: <FaMobileAlt className="w-8 h-8 text-teal-500 transition-colors duration-300" />,
+      icon: <FaPencilRuler className="w-8 h-8 text-teal-500 transition-colors duration-300" />,
       backgroundColor: 'group-hover:bg-teal-500',
       circleColor: 'bg-teal-200 group-hover:bg-light',
     },
     {
-      title: t('services.seoOptimizationTitle'),
-      description: t('services.seoOptimizationDescription'),
-      icon: <FaChartLine className="w-8 h-8 text-orange-500 transition-colors duration-300" />,
-      backgroundColor: 'group-hover:bg-orange-500',
-      circleColor: 'bg-orange-200 group-hover:bg-light',
+      title: t('services.devOpsTitle'),
+      description: t('services.devOpsDescription'),
+      icon: <FaCogs className="w-8 h-8 text-cyan-500 transition-colors duration-300" />,
+      backgroundColor: 'group-hover:bg-cyan-500',
+      circleColor: 'bg-cyan-200 group-hover:bg-light',
     },
     {
       title: t('services.cloudSolutionsTitle'),
       description: t('services.cloudSolutionsDescription'),
-      icon: <FaCloud className="w-8 h-8 text-green-500 transition-colors duration-300" />,
+      icon: <FaCloud className="w-8 h-8 text-orange-500 transition-colors duration-300" />,
+      backgroundColor: 'group-hover:bg-orange-500',
+      circleColor: 'bg-orange-200 group-hover:bg-light',
+    },
+    {
+      title: t('services.testingTitle'),
+      description: t('services.testingDescription'),
+      icon: <FaBug className="w-8 h-8 text-gray-700 transition-colors duration-300" />,
+      backgroundColor: 'group-hover:bg-gray-700',
+      circleColor: 'bg-gray-200 group-hover:bg-light',
+    },
+    {
+      title: t('services.databaseManagementTitle'),
+      description: t('services.databaseManagementDescription'),
+      icon: <FaServer className="w-8 h-8 text-red-500 transition-colors duration-300" />,
+      backgroundColor: 'group-hover:bg-red-500',
+      circleColor: 'bg-red-200 group-hover:bg-light',
+    },
+    {
+      title: t('services.seoOptimizationTitle'),
+      description: t('services.seoOptimizationDescription'),
+      icon: <FaChartLine className="w-8 h-8 text-green-500 transition-colors duration-300" />,
       backgroundColor: 'group-hover:bg-green-500',
       circleColor: 'bg-green-200 group-hover:bg-light',
     },
@@ -54,13 +68,6 @@ const Services = () => {
       icon: <FaShoppingCart className="w-8 h-8 text-indigo-500 transition-colors duration-300" />,
       backgroundColor: 'group-hover:bg-indigo-500',
       circleColor: 'bg-indigo-200 group-hover:bg-light',
-    },
-    {
-      title: t('services.databaseManagementTitle'),
-      description: t('services.databaseManagementDescription'),
-      icon: <FaServer className="w-8 h-8 text-red-500 transition-colors duration-300" />,
-      backgroundColor: 'group-hover:bg-red-500',
-      circleColor: 'bg-red-200 group-hover:bg-light',
     },
   ]
   return (
